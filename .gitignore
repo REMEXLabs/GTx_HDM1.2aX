@@ -1,7 +1,10 @@
-*.html~1~
 *.draft
-*.css~1~
 *.md~1~
-*.css~2~
 *.md~2~
+*.md~3~
+*.html~1~
+*.html~2~
+*.html~3~
+*.css~1~
+*.css~2~
 *.css~3~

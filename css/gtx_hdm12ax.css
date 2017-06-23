@@ -1,22 +1,7 @@
-/* 
-  Copyright 2017 Hochschule der Medien, Stuttgart, Germany
-  
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-     http://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-*/
 /* Colour theme tool: Adobe Color CC: https://color.adobe.com/
   Triad theme with five colours (https://color.adobe.com/create/color-wheel/?base=2&rule=Triad&selected=3&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.7,0.10811751783437556,0,0.9613731875699806,1,0.8803921568627451,1,0.9834206587628677,0.9803921568627451,0,0.2682574641150495,0.8,0.63,0.6534725281100668,0.7&swatchOrder=0,1,2,3,4): 
   off-white 1: #F5FFE0; off-white 2: #FFFBFA;
-  grey: #A1A7B2; 
+  grey: #A1A7B2;
   blue: #076199; dark red: #B20000
 */
 
@@ -113,7 +98,20 @@ body {
     list-style-type: square;
   }
 
+  dl.glossary dt, dl.glossary dd { border-bottom: 1px solid #076199; 
+    padding: 4px;
+    margin-bottom: 2px;
+  }
+  dl.glossary dt { margin-top: 6px;
+    font-weight: bold;
+    color: #FFFBFA;
+    background-color: #076199;
+    background-image: linear-gradient(0deg, #076199, #217FB8);
+  }
+  dl.glossary dd { border-left: 1px solid #076199; 
+  }
 
+  
 /* "Media Queries: How to target desktop, tablet and mobile?": https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile 
  & query https://duckduckgo.com/?q=tablet+screen+size+width+pixels&ia=web */
 @media (min-width:320px) {
@@ -132,6 +130,7 @@ body {
   }
   footer p { margin-top: 2px; margin-bottom: 2px; padding: 0;}
 } /* @media (min-width:320px) */
+
 
 @media (min-width:801px) {
   main {
