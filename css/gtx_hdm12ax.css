@@ -79,6 +79,7 @@ body {
     background-color: #B20000;
     color: #FFFAFA;
     border-radius: .6em;
+    cursor: default;
   }
   a:hover, a:focus, a:active {
     text-decoration: none;
