@@ -1,0 +1,44 @@
+
+body {
+  font-family: 'Libre Baskerville', 'Trebuchet MS', Verdana, Helvetica, sans-serif;
+}
+
+nav a:link,
+nav a:visited, 
+nav a:hover, nav a:focus,
+nav a:active {
+  /*@@add */
+}
+
+nav a:link,
+nav a:visited {
+  border-top: 1px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 10px solid transparent;
+}
+
+
+a:hover, a:focus, a:active {
+  /*background-color: @@add;
+  color: #FFF;*/
+  text-decoration: none;
+}
+
+
+footer a:link, footer a:visited {
+}
+
+footer a:hover, footer a:focus, footer a:active {
+}
+
+
+h2, h3, h4, h5, h6 {
+  /*color: @@add;
+  background-color: transparent;*/
+}
+
+main ul li {
+  list-style-type: square;
+}
+

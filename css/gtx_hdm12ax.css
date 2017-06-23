@@ -1,0 +1,156 @@
+/* Colour theme tool: Adobe Color CC: https://color.adobe.com/
+  Triad theme with five colours (https://color.adobe.com/create/color-wheel/?base=2&rule=Triad&selected=3&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.7,0.10811751783437556,0,0.9613731875699806,1,0.8803921568627451,1,0.9834206587628677,0.9803921568627451,0,0.2682574641150495,0.8,0.63,0.6534725281100668,0.7&swatchOrder=0,1,2,3,4): 
+  off-white 1: #F5FFE0; off-white 2: #FFFBFA;
+  grey: #A1A7B2; 
+  blue: #076199; dark red: #B20000
+*/
+
+html, body, header, h1 { margin: 0; padding: 0; }
+body {
+  font-family: 'Libre Baskerville', 'Trebuchet MS', Verdana, Helvetica, sans-serif;
+  background-color: #FFFBFA; /*#FFFAFA = Snow; #FFF5EE = SeaShell; see https://en.wikipedia.org/wiki/Shades_of_white */
+  margin-top: 0; padding-top: 0;
+}
+  header {
+    padding-left: 10px;
+    color: #FFFBFA;
+    background-color: #076199;
+    background-image: linear-gradient(0deg, #076199, #217FB8);
+  }
+  h1 {
+    background-color: transparent;
+    color: #FFFBFA;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  nav {
+    background-color: transparent;
+    margin-top: 0px;
+    padding: 5px 10px 20px 10px;
+    border-top: 10px solid #FFFBFA;
+    border-bottom: 10px solid #FFFBFA;
+  }
+  nav h2 {
+    background-color: transparent;
+    color: #076199;
+    margin-top: 0px;
+    padding: 0;
+  }
+  nav ul, nav ul li {
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-bottom: 4px;
+  }
+  nav ul li {
+    list-style-type: none;
+  }
+  nav ul li a {
+    font-size: 1em;
+    display: block;
+    background-color: #FFFBFA;
+    color: #076199;
+    text-decoration: none;
+  }
+  nav ul li.active a {
+    font-weight: bold;
+  }
+  nav ul li.active a, nav ul li a:hover, nav ul li a:focus, nav ul li a:active  {
+    text-decoration: none;
+    background-color: #B20000;
+    color: #FFFAFA;
+    border-radius: .6em;
+  }
+  
+  nav a:link,
+  nav a:visited, 
+  nav a:hover, nav a:focus,
+  nav a:active {
+    /*@@add */
+  }
+  
+  nav a:link,
+  nav a:visited {
+    border-top: 1px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-left: 10px solid transparent;
+  }
+  
+  
+  a:hover, a:focus, a:active {
+    /*background-color: @@add;
+    color: #FFF;*/
+    text-decoration: none;
+  }
+
+  footer {
+    clear: left;
+    color: #FFFBFA;
+    background-color: #076199;
+    background-image: linear-gradient(0deg, #217FB8, #076199);
+    /* Gradients can be generated with http://www.css3factory.com/linear-gradients/
+      See also https://css-tricks.com/css3-gradients/
+    */
+  }
+
+  footer a:link, footer a:visited {
+    color: #FFFBFA;
+  }
+
+  footer a:hover, footer a:focus, footer a:active {
+    color: #FFFBFA;
+    text-decoration: none;
+  }
+
+  h2, h3, h4, h5, h6 {
+    /*color: @@add;
+    background-color: transparent;*/
+  }
+
+  main ul li {
+    list-style-type: square;
+  }
+
+
+/* "Media Queries: How to target desktop, tablet and mobile?": https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile 
+ & query https://duckduckgo.com/?q=tablet+screen+size+width+pixels&ia=web */
+@media (min-width:320px) {
+  main, nav {
+    float: none;
+  }
+  header, main {
+    padding-left: 5px;
+  }
+  nav h2 {
+    display: block;
+  }
+  footer {
+    padding: 1px 0px 1px 5px;
+    border: none;
+  }
+  footer p { margin-top: 2px; margin-bottom: 2px; padding: 0;}
+} /* @media (min-width:320px) */
+
+@media (min-width:801px) {
+  main {
+    width: 78%;
+    float: left;
+    clear: right;
+    padding-left: 10px;
+    background-color: transparent;
+  }
+  nav {
+    min-width: 15em;
+    max-width: 20em;
+    float: left; 
+    clear: left;
+  }
+  nav h2 {
+    display: none;
+  }
+  footer {
+    padding: 4px 5px 4px 10px;
+  }
+} /* end @media (min-width:801px) */
+
