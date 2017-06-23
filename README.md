@@ -1,4 +1,4 @@
-# GTx_HDM1.2a
+# Example Website for the Course GTx_HDM1.2a
 
 This repository contains code and resources for the online course "User Interface Personalization" (GTx_HDM1.2aX).
 
