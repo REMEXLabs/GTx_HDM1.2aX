@@ -1,3 +1,18 @@
+/* 
+  Copyright 2017 Hochschule der Medien, Stuttgart, Germany
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+*/
 /* Colour theme tool: Adobe Color CC: https://color.adobe.com/
   Triad theme with five colours (https://color.adobe.com/create/color-wheel/?base=2&rule=Triad&selected=3&name=My%20Color%20Theme&mode=rgb&rgbvalues=0.7,0.10811751783437556,0,0.9613731875699806,1,0.8803921568627451,1,0.9834206587628677,0.9803921568627451,0,0.2682574641150495,0.8,0.63,0.6534725281100668,0.7&swatchOrder=0,1,2,3,4): 
   off-white 1: #F5FFE0; off-white 2: #FFFBFA;
@@ -76,8 +91,8 @@ body {
     border-bottom: 1px solid transparent;
     border-left: 10px solid transparent;
   }
-  
-  
+
+
   a:hover, a:focus, a:active {
     /*background-color: @@add;
     color: #FFF;*/
