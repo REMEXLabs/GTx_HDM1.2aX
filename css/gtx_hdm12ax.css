@@ -73,15 +73,13 @@ body {
     border: 2px solid #B20000;
     border-radius: .6em;
   }
-
-  nav ul li.active a:link, nav ul li.active a:hover, nav ul li.active a:focus, nav ul li.active a:active {
+  nav ul li.active a, nav ul li.active a:link, nav ul li.active a:hover, nav ul li.active a:focus, nav ul li.active a:active {
     font-weight: bold;
     text-decoration: none;
     background-color: #B20000;
     color: #FFFAFA;
     border-radius: .6em;
   }
-
   a:hover, a:focus, a:active {
     text-decoration: none;
   }
