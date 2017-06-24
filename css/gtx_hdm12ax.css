@@ -90,8 +90,8 @@ body {
   }
 
   h2, h3, h4, h5, h6 {
-    /*color: @@add;
-    background-color: transparent;*/
+    color: #076199;
+    background-color: transparent;
   }
 
   main ul li {
@@ -111,7 +111,14 @@ body {
   dl.glossary dd { border-left: 1px solid #076199; 
   }
 
-  
+  kbd {
+    border: 1px solid #A1A7B2;
+    padding: 1px 2px;
+    border-radius: 4px;
+  }
+
+  p.skiplink { margin: -5px 0 0 0; padding: 0 0 2px 0; }
+
 /* "Media Queries: How to target desktop, tablet and mobile?": https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile 
  & query https://duckduckgo.com/?q=tablet+screen+size+width+pixels&ia=web */
 @media (min-width:320px) {
@@ -126,9 +133,14 @@ body {
   }
   footer {
     padding: 1px 0px 1px 5px;
+    margin-top: 10px;
     border: none;
   }
   footer p { margin-top: 2px; margin-bottom: 2px; padding: 0;}
+  a.skiplink, a.skiplink:hover, a.skiplink:focus, a.skiplink:active {
+    background:transparent;
+    color: white;
+  }
 } /* @media (min-width:320px) */
 
 
@@ -140,6 +152,7 @@ body {
     padding-left: 10px;
     background-color: transparent;
   }
+  header { padding-top: 12px; }
   nav {
     min-width: 15em;
     max-width: 20em;
@@ -151,6 +164,16 @@ body {
   }
   footer {
     padding: 4px 5px 4px 10px;
+    margin-top: 40px;
+  }
+
+  a.skiplink {
+    background: transparent;
+    color: transparent;
+  }
+  a.skiplink:focus {
+    background:transparent;
+    color: white;
   }
 } /* end @media (min-width:801px) */
 
