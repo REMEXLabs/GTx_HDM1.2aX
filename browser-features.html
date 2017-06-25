@@ -62,15 +62,29 @@
       <img src="./img/Firefox-v54_Options_Colours-Dialog_cropped-6.png" alt="Colour options for text, background, unvisited links and visited links, for systems colours, for underlining links and for specifying when the chosen colours should be applied" />
       <figcaption>Colours dialog in Firefox 54</figcaption>
     </figure>
-    <p>Let’s first look at the option “<samp>Use system colours</samp>”. 
-      When this checkbox is checked, the browser will apply your operating system’s colour setting to the web content. 
-      The drop-down menu below the checkbox allows you to determine when this should happen: 
-      “<samp>Never</samp>”, “<samp>Always</samp>” or “<samp>Only with High Contrast Themes</samp>”. 
-      <br />If you choose “<samp>Always</samp>”, the system colours will take effect as soon as you choose <samp>OK</samp> to confirm this choice: 
-      the browser options and the content in any tabs you have open will immediately change colour. 
-      <br />If you choose “<samp>Only with High Contrast Themes</samp>” and click <samp>OK</samp>, 
-      the effect will only become visible when you enable a high-contrast theme in the operating system.
-      <!-- @@OS high contrast -->
+    <p>
+      The buttons next to the labels <samp>Text</samp>, <samp>Background</samp>, 
+      <samp>Unvisited Links</samp> and <samp>Visited Links</samp>
+      allow you to pick a colour from a grid with seventy colours.
+      In order to apply these colours, you need to do two things.  
+      First, you need to uncheck the option “<samp>Use system colours</samp>”. 
+      The chosen colours will then be applied to any <abbr>HTML</abbr> content for which the webpage
+      itself has not specified any colours (this is typically done with <abbr>CSS</abbr> stylesheets).
+      <br />However, since most webpages specify colours for text, background and links,
+      you also need to to the menu labelled
+      “<samp>Override the colours specified by the page with your selections above</samp>” 
+      and change its value from “<samp>Never</samp>” to “<samp>Always</samp>”.
+      If you choose “<samp>Always</samp>”, your preferred colours will immediately be applied to 
+      all web content.
+      <br />If you choose “<samp>Only with High Contrast Themes</samp>”, you will need to
+      enable a high contrast theme in your operating system. However, in Firefox 54 on Windows 7,
+      enabling a high contrast theme will result in web pages having black on white text (with blue links)
+      instead of the colours chosen in the colours dialog.
+      <br />On Microsoft Windows, you can enable high contrast by going through the following steps:
+      go to the Windows button, then to <samp>Control Panel</samp> and open <samp>Personalization</samp>.
+      When you scroll down, you will find a few high contras themes. On Windows 7, these are
+      High Contrast #1, High Contrast #2, High Contrast Black (essentially white on black)
+      and High Contrast White (essentially black on white).
     </p>
     <p>With “<samp>Use system colours</samp>” disabled, you can set your preferred colours for text, background, unvisited links and visited links, 
       and then choose “<samp>Always</samp>” in the drop-down menu to make sure that these colours are used for every website. 
@@ -99,7 +113,7 @@
     <p>Under “<samp>Advanced</samp>”, you can specify the default serif font, the default sans-serif font, 
       and font faces and sizes for writing systems other than the Latin alphabet.
     </p>
-    <!-- aria-described-by attribute currently not allowed on figure or img elements:
+    <!-- Accordint to validator.w3.org, aria-described-by attribute is currently not allowed on figure or img elements:
     <figure aria-described-by="desc-advanced-font-settings">
     -->
     <figure>
