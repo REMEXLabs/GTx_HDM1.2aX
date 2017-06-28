@@ -11,113 +11,113 @@ body {
   background-color: #FFFBFA; /*#FFFAFA = Snow; #FFF5EE = SeaShell; see https://en.wikipedia.org/wiki/Shades_of_white */
   margin-top: 0; padding-top: 0;
 }
-  header {
-    padding-left: 10px;
-    color: #FFFBFA;
-    background-color: #076199;
-    background-image: linear-gradient(0deg, #076199, #217FB8);
-  }
-  h1 {
-    background-color: transparent;
-    color: #FFFBFA;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
+header {
+  padding-left: 10px;
+  color: #FFFBFA;
+  background-color: #076199;
+  background-image: linear-gradient(0deg, #076199, #217FB8);
+}
+h1 {
+  background-color: transparent;
+  color: #FFFBFA;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
-  nav {
-    background-color: transparent;
-    margin-top: 0px;
-    padding: 5px 10px 20px 10px;
-    border-top: 10px solid #FFFBFA;
-    border-bottom: 10px solid #FFFBFA;
-  }
-  nav h2 {
-    background-color: transparent;
-    color: #076199;
-    margin-top: 0px;
-    padding: 0;
-  }
-  nav ul, nav ul li {
-    margin-left: 0px;
-    padding-left: 0px;
-    margin-bottom: 4px;
-  }
-  nav ul li {
-    list-style-type: none;
-  }
-  nav ul li a {
-    font-size: 1em;
-    display: block;
-    background-color: #FFFBFA;
-    color: #076199;
-    text-decoration: none;
-    border: 2px solid transparent;
-    padding-left: 10px;
-  }
-  nav ul li a:hover, nav ul li a:focus, nav ul li a:active  {
-    border: 2px solid #B20000;
-    border-radius: .6em;
-  }
-  nav ul li.active a, nav ul li.active a:link, nav ul li.active a:hover, nav ul li.active a:focus, nav ul li.active a:active {
-    font-weight: bold;
-    text-decoration: none;
-    background-color: #B20000;
-    color: #FFFAFA;
-    border-radius: .6em;
-    cursor: default;
-  }
-  a:hover, a:focus, a:active {
-    text-decoration: none;
-  }
+nav {
+  background-color: transparent;
+  margin-top: 0px;
+  padding: 5px 10px 20px 10px;
+  border-top: 10px solid #FFFBFA;
+  border-bottom: 10px solid #FFFBFA;
+}
+nav h2 {
+  background-color: transparent;
+  color: #076199;
+  margin-top: 0px;
+  padding: 0;
+}
+nav ul, nav ul li {
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-bottom: 4px;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  font-size: 1em;
+  display: block;
+  background-color: #FFFBFA;
+  color: #076199;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding-left: 10px;
+}
+nav ul li a:hover, nav ul li a:focus, nav ul li a:active  {
+  border: 2px solid #B20000;
+  border-radius: .6em;
+}
+nav ul li.active a, nav ul li.active a:link, nav ul li.active a:hover, nav ul li.active a:focus, nav ul li.active a:active {
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #B20000;
+  color: #FFFAFA;
+  border-radius: .6em;
+  cursor: default;
+}
+a:hover, a:focus, a:active {
+  text-decoration: none;
+}
 
-  footer {
-    clear: left;
-    color: #FFFBFA;
-    background-color: #076199;
-    background-image: linear-gradient(0deg, #217FB8, #076199);
-    /* Gradients can be generated with http://www.css3factory.com/linear-gradients/
-      See also https://css-tricks.com/css3-gradients/
-    */
-  }
+footer {
+  clear: left;
+  color: #FFFBFA;
+  background-color: #076199;
+  background-image: linear-gradient(0deg, #217FB8, #076199);
+  /* Gradients can be generated with http://www.css3factory.com/linear-gradients/
+    See also https://css-tricks.com/css3-gradients/
+  */
+}
 
-  footer a:link, footer a:visited {
-    color: #FFFBFA;
-  }
+footer a:link, footer a:visited {
+  color: #FFFBFA;
+}
 
-  footer a:hover, footer a:focus, footer a:active {
-    color: #FFFBFA;
-    text-decoration: none;
-  }
+footer a:hover, footer a:focus, footer a:active {
+  color: #FFFBFA;
+  text-decoration: none;
+}
 
-  h2, h3, h4, h5, h6 {
-    color: #076199;
-    background-color: transparent;
-  }
+h2, h3, h4, h5, h6 {
+  color: #076199;
+  background-color: transparent;
+}
 
-  main ul li {
-    list-style-type: square;
-  }
+main ul li {
+  list-style-type: square;
+}
 
-  dl.glossary dt, dl.glossary dd { border-bottom: 1px solid #076199; 
-    padding: 4px;
-    margin-bottom: 2px;
-  }
-  dl.glossary dt { margin-top: 6px;
-    font-weight: bold;
-    color: #FFFBFA;
-    background-color: #076199;
-    background-image: linear-gradient(0deg, #076199, #217FB8);
-  }
-  dl.glossary dd { border-left: 1px solid #076199; 
-  }
+dl.glossary dt, dl.glossary dd { border-bottom: 1px solid #076199; 
+  padding: 4px;
+  margin-bottom: 2px;
+}
+dl.glossary dt { margin-top: 6px;
+  font-weight: bold;
+  color: #FFFBFA;
+  background-color: #076199;
+  background-image: linear-gradient(0deg, #076199, #217FB8);
+}
+dl.glossary dd { border-left: 1px solid #076199; 
+}
 
-  kbd {
-    border: 1px solid #A1A7B2;
-    padding: 1px 2px;
-    border-radius: 4px;
-  }
+kbd {
+  border: 1px solid #A1A7B2;
+  padding: 1px 2px;
+  border-radius: 4px;
+}
 
-  p.skiplink { margin: -5px 0 0 0; padding: 0 0 2px 0; }
+p.skiplink { margin: -5px 0 0 0; padding: 0 0 2px 0; }
 
 /* "Media Queries: How to target desktop, tablet and mobile?": https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile 
  & query https://duckduckgo.com/?q=tablet+screen+size+width+pixels&ia=web */

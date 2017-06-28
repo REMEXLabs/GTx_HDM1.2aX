@@ -1,6 +1,6 @@
 
 body {
-  font-family: 'Libre Baskerville', 'Trebuchet MS', Verdana, Helvetica, sans-serif;
+  font-family: sans-serif;
   background-color: Window; color: WindowText;
 }
 
@@ -112,6 +112,7 @@ a:hover, a:focus, a:active {
 }
 
 footer {
+  clear: left;
   border-color: ThreeDDarkShadow;
   border-style: solid;
   color: WindowText;
@@ -132,5 +133,62 @@ footer a:hover, footer a:focus, footer a:active {
 main ul li {
   list-style-type: square;
 }
+
+
+@media (min-width:320px) {
+  main, nav {
+    float: none;
+  }
+  header, main {
+    padding-left: 5px;
+  }
+  nav h2 {
+    display: block;
+  }
+  footer {
+    padding: 1px 0px 1px 5px;
+    margin-top: 10px;
+    border: none;
+  }
+  footer p { margin-top: 2px; margin-bottom: 2px; padding: 0;}
+  a.skiplink, a.skiplink:hover, a.skiplink:focus, a.skiplink:active {
+    background:transparent;
+    color: white;
+  }
+} /* @media (min-width:320px) */
+
+
+@media (min-width:801px) {
+  main {
+    width: 78%;
+    float: left;
+    clear: right;
+    padding-left: 10px;
+    background-color: transparent;
+  }
+  header { padding-top: 12px; }
+  nav {
+    min-width: 15em;
+    max-width: 20em;
+    float: left; 
+    clear: left;
+  }
+  nav h2 {
+    display: none;
+  }
+  footer {
+    padding: 4px 5px 4px 10px;
+    margin-top: 40px;
+  }
+
+  a.skiplink {
+    background: transparent;
+    color: transparent;
+  }
+  a.skiplink:focus {
+    background:transparent;
+    color: white;
+  }
+} /* end @media (min-width:801px) */
 
 /* derived from https://github.com/cstrobbe/languagelearning/blob/gh-pages/css/systemcolours.css and relicensed by the author */
