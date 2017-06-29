@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>GPII Common Terms | GTx HDM1.2aX</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/gtx_hdm12ax.css" title="Default style" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/systemcolours.css" title="System colours" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/default.css" title="No colours" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+</head>
+
+<body>
+  <header>
+    <h1><span class="h1txt"><abbr>GPII</abbr> Common Terms</span></h1>
+    <p class="skiplink"><a class="skiplink" href="#main">Skip to main content</a></p>
+  </header>
+
+  <nav>
+    <h2>Site Navigation</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="accessibility-usability.html">Accessibility and Usability</a></li>
+      <li><a href="browser-features.html">Browser Features</a></li>
+      <li><a href="#">Page 4</a></li>
+      <li class="active"><a href="gpii-common-terms.html"><abbr>GPII</abbr> Common Terms</a></li>
+      <li><a href="glossary.html"><abbr>ICT</abbr> Accessibility Glossary</a></li>
+      <li><a href="links.html">Links</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+  <p>The table on this page describes so-called “common terms” defined for the
+    Global Public Inclusive Infrastructure (<abbr>GPII</abbr>).
+    “Common” means that these terms can apply across applications and devices,
+    as opposed to “application-specific terms”, which apply to a specific application (or operating system).
+    “Common” also implies that not all of these terms were defined specifically with the Web in mind. 
+    For example, <code>cursorSize</code> can be set on some operating systems but not by means of <abbr>CSS</abbr> styles.
+  </p>
+  <p>All “common terms” reside in the namespace
+    <code>http://registry.gpii.org/common/</code>; in order to save space, this namespace is not mentioned in the table below.
+    When no default value is defined, this merely means that <abbr>GPII</abbr> does not specify a default value,
+    not that specific applications cannot have their own default values.
+  </p>
+  <table>
+    <caption>Table with selected “common terms” defined in <abbr>GPII</abbr></caption>
+    <thead>
+      <tr>
+        <th scope="col" id="th-name">Identifier</th>
+        <th scope="col" id="th-apptype" abbr="Application">Application type</th>
+        <th scope="col" id="th-datatype">Data type</th>
+        <th scope="col" id="th-valuerange" abbr="Range">Value range</th>
+        <th scope="col" id="th-default" abbr="Default">Default value</th>
+        <th scope="col" id="th-description">Description</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        <th>Identifier</th>
+        <th>Application type</th>
+        <th>Data type</th>
+        <th>Value range</th>
+        <th>Default value</th>
+        <th>Description</th>
+      </tr>
+    </tfoot>
+    <tbody>
+      <tr>
+        <th headers="th-name" scope="row">highContrastEnabled</th>
+        <td headers="th-apptype">Screen enhancement</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determines whether a high-contrast theme should be enabled.</td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">highContrastTheme</th>
+        <td headers="th-apptype">Screen enhancement</td>
+        <td headers="th-datatype">String</td>
+        <td headers="th-valuerange">black-white, white-black, yellow-black, black-yellow, lime-black</td>
+        <td headers="th-default">black-white</td>
+        <td headers="th-description">The high-contrast theme. The chosen theme only becomes active when <code>highContrastEnabled</code> is set to <code>True</code>.</td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">fontSize</th>
+        <td headers="th-apptype">Screen enhancement</td>
+        <td headers="th-datatype">Float</td>
+        <td headers="th-valuerange">0.1 .. * (in points)</td>
+        <td headers="th-default">12</td>
+        <td headers="th-description">Font size in points.
+          Note that <abbr>CSS</abbr> can describe
+          <a href="https://www.w3.org/TR/CSS21/fonts.html#propdef-font-size"><code>font-size</code></a> 
+          using various types of values. See also, for example,
+          <a href="http://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/"><abbr>CSS</abbr> Font-Size: em vs. px vs. pt vs. percent</a>.
+        </td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">cursorSize</th>
+        <td headers="th-apptype">Screen enhancement</td>
+        <td headers="th-datatype">Float</td>
+        <td headers="th-valuerange">0.0 .. 1.0</td>
+        <td headers="th-default">0.5</td>
+        <td headers="th-description">Cursor size.</td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">mouseTrailing</th>
+        <td headers="th-apptype">Screen enhancement</td>
+        <td headers="th-datatype">String</td>
+        <td headers="th-valuerange">0 .. 10</td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description">Length of the mouse trail. The maximum value for Windows 7 is probably 6.</td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">linkAdaptation</th>
+        <td headers="th-apptype">Screen enhancement</td>
+        <td headers="th-datatype">String</td>
+        <td headers="th-valuerange">default, emphasizeLinks, hideLinks, disableLinks, removeLinks, annotateLinks</td>
+        <td headers="th-default">default</td>
+        <td headers="th-description">How links should be adapted. 
+          <code>hideLinks</code>: change their colour to that of normal text.
+          <code>disableLinks</code>: disable link anchors, so they can no longer be traversed.
+          <code>removeLinks</code>: remove link anchors.
+          <code>annotateLinks</code>: augment the link with comments.
+          <!-- See also https://en.wikipedia.org/wiki/Adaptive_hypermedia#Link_adaptation_2 -->
+        </td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">colourSaturation</th>
+        <td headers="th-apptype">Screen enhancement</td>
+        <td headers="th-datatype">Integer</td>
+        <td headers="th-valuerange">1 .. 100 (minimum &ndash; maximum saturation)</td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description"></td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">sharpness</th>
+        <td headers="th-apptype">Screen enhancement</td>
+        <td headers="th-datatype">Integer</td>
+        <td headers="th-valuerange">1 .. 100 (minimum &ndash; maximum saturation)</td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description"></td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">contrast</th>
+        <td headers="th-apptype">Screen enhancement</td>
+        <td headers="th-datatype">Integer</td>
+        <td headers="th-valuerange">1 .. 100 (minimum &ndash; maximum saturation)</td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description"></td>
+      </tr>
+
+      <tr>
+        <th headers="th-name" scope="row">magnifierEnabled</th>
+        <td headers="th-apptype">Screen magnification</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determines whether a <a href="https://en.wikipedia.org/wiki/Screen_magnifier">screen magnifier</a> should be turned on.</td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">magnification</th>
+        <td headers="th-apptype">Screen magnification</td>
+        <td headers="th-datatype">Float</td>
+        <td headers="th-valuerange">1.0 .. *</td>
+        <td headers="th-default">1</td>
+        <td headers="th-description">The magnification level. The value <code>1</code> means no magnification.</td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">tracking</th>
+        <td headers="th-apptype">Screen magnification</td>
+        <td headers="th-datatype">array of Strings</td>
+        <td headers="th-valuerange">one or more of: mouse, caret, focus</td>
+        <td headers="th-default">mouse</td>
+        <td headers="th-description">How objects on the screen should be brought into the focus of the magnifier.
+          <code>mouse</code>: follow the mouse cursor.
+          <code>caret</code>: follow the edit cursor.
+          <code>focus</code>: follow keyboard focus.
+          These values can be combined.
+        </td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">magnifierPosition</th>
+        <td headers="th-apptype">Screen magnification</td>
+        <td headers="th-datatype">String</td>
+        <td headers="th-valuerange">FullScreen, Lens, LeftHalf, RightHalf, TopHalf, BottomHalf, Custom</td>
+        <td headers="th-default">TopHalf</td>
+        <td headers="th-description">Where the magnifier should be positioned on the screen.</td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">invertColours</th>
+        <td headers="th-apptype">Screen magnification</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Inverts the colours on the screen.
+          This should not be confused with a light on dark contrast theme. While contrast themes enhance contrast,
+          colour inversion is often used to get rid of an overwhelming white background.
+        </td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">showCrosshairs</th>
+        <td headers="th-apptype">Screen magnification</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determines whether the normal mouse pointer should be replaced by (or enhanced with) crosshairs to make the current mouse position easier to sea.</td>
+      </tr>
+
+      <tr>
+        <th headers="th-name" scope="row">captionsEnabled</th>
+        <td headers="th-apptype">Alternatives and augmentations for media or text</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determines whether capions (or &ldquo;subtitles for the Deaf or hard of hearing&rdquo; should be turned on.
+          Captions should not be confused with &ldquo;normal&rdquo; subtitles, which merely translate the spoken content of a video.
+          Captions also describe important non-speech sounds.
+        </td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">subtitlesEnabled</th>
+        <td headers="th-apptype">Alternatives and augmentations for media or text</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determines whether subtitles should be turned on.</td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">audioDescriptionEnabled</th>
+        <td headers="th-apptype">Alternatives and augmentations for media or text</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determines whether 
+          <a href="https://en.wikipedia.org/wiki/Audio_description">audio description</a>
+          should be turned on. (This is sometimes done by providing an alternative video that has audio description.)
+        </td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">signLanguageEnabled</th>
+        <td headers="th-apptype">Alternatives and augmentations for media or text</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determines whether 
+          <a href="https://en.wikipedia.org/wiki/Sign_language">sign language</a>
+          should be provided or turned on.
+        </td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">signLanguage</th>
+        <td headers="th-apptype">Alternatives and augmentations for media or text</td>
+        <td headers="th-datatype">String</td>
+        <td headers="th-valuerange">Language tags conforming to <a href="https://tools.ietf.org/html/bcp47"><abbr title="Internet Engineering Task Force">IETF</abbr> <abbr title="Best Current Practice">BCP</abbr> 47</a>.</td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description">Language tag identifying a sign language. Examples:
+          <code>ase</code>: American Sign Language;
+          <code>asf</code>: Australian Sign Language;
+          <code>bfi</code>: British Sign Language;
+          <code>csl</code>: Chinese Sign Language;
+          <code>fsl</code>: French Sign Language;
+          <code>gsg</code>: German Sign Language;
+          <code>rsl</code>: Russian Sign Language;
+          <code>ssp</code>: Spanish Sign Language.
+        </td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">signLanguageInterpreterType</th>
+        <td headers="th-apptype">Alternatives and augmentations for media or text</td>
+        <td headers="th-datatype">String</td>
+        <td headers="th-valuerange">human, avatar</td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description">Determines whether (videos of) a human sign language interpreter or a sign language avatar should be used.</td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">pictogramsEnabled</th>
+        <td headers="th-apptype">Alternatives and augmentations for media or text</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determins whether pictograms should be added to support people with a
+          <a href="https://en.wikipedia.org/wiki/Reading_disability">reading disability</a>
+          or a general learning disability (<abbr>UK</abbr>)&nbsp;/
+          <a href="https://en.wikipedia.org/wiki/Intellectual_disability">intellectual disability (<abbr>ID</abbr>)</a> (<abbr>USA</abbr>).
+        </td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">pictogramsSymbolSet</th>
+        <td headers="th-apptype">Alternatives and augmentations for media or text</td>
+        <td headers="th-datatype">String</td>
+        <td headers="th-valuerange">ARASAAC, Bliss, Wahl</td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description">Determines which symbol set should be used.
+          See for example <a href="http://www.arasaac.org/">ARASAAC</a> and
+          <a href="https://en.wikipedia.org/wiki/Blissymbols">Bliss</a>.
+        </td>
+      </tr>
+
+      <tr>
+        <th headers="th-name" scope="row">simplifiedUiEnabled</th>
+        <td headers="th-apptype">Cognitive support</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determines whether the application should provide a simplified user inteface,
+          especially for people wit a general learning disability (<abbr>UK</abbr>)&nbsp;/ 
+          intellectual disability (<abbr>ID</abbr>) (<abbr>USA</abbr>).
+        </td>
+      </tr>
+      <!-- 
+      <tr>
+        <th headers="th-name" scope="row"></th>
+        <td headers="th-apptype"></td>
+        <td headers="th-datatype"></td>
+        <td headers="th-valuerange"></td>
+        <td headers="th-default"></td>
+        <td headers="th-description"></td>
+      </tr>
+      -->
+    </tbody>
+  </table>
+  </main>
+
+  <footer>
+    <p id="licence">
+    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="./img/cc_by_4.0_88x31.png" /></a><br />
+    <strong>Example Site for GTx HDM1.2aX</strong> by <a href="https://github.com/REMEXLabs"><abbr>HdM</abbr> REMEXLabs</a> is licensed under a 
+    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </p>
+    <p><a href="https://github.com/REMEXLabs/GTx_HDM1.2aX">GitHub repository</a> | <a href="publisherinfo.html">Publisher information / <span lang="de">Impressum</span></a></p>
+  </footer>
+</body>
+</html>
