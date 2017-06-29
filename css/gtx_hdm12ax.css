@@ -119,6 +119,24 @@ kbd {
 
 p.skiplink { margin: -5px 0 0 0; padding: 0 0 2px 0; }
 
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+th, td {
+  border: 1px solid #666;
+  padding: 4px 8px;
+}
+table caption {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+tbody th {
+  text-align: left;
+}
+
+
 /* "Media Queries: How to target desktop, tablet and mobile?": https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile 
  & query https://duckduckgo.com/?q=tablet+screen+size+width+pixels&ia=web */
 @media (min-width:320px) {

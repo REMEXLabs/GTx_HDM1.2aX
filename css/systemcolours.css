@@ -25,10 +25,17 @@ nav > ul {
   background-color: transparent;
 }
 
-nav > ul > li {
+nav ul, nav ul li {
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-bottom: 4px;
+}
+nav ul li {
+  list-style-type: none;
   color: inherit;
   background-color: transparent; 
 }
+
 
 nav > ul > li > ul {
   color: inherit;
@@ -153,6 +160,24 @@ samp {
   font-size: .9em;
   padding: 1px 2px;
 }
+
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+th, td {
+  border: 1px solid ActiveBorder;
+  padding: 4px 8px;
+}
+table caption {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+tbody th {
+  text-align: left;
+}
+
 
 @media (min-width:320px) {
   main, nav {
