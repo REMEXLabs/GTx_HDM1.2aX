@@ -5,7 +5,7 @@
   <title>GPII Common Terms | GTx HDM1.2aX</title>
   <link rel="stylesheet" type="text/css" media="screen" href="./css/gtx_hdm12ax.css" title="Default style" />
   <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/systemcolours.css" title="System colours" />
-  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/default.css" title="No colours" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/nocolours.css" title="No colours" />
   <script src="js/sorttable.js"></script>
   <meta name="robots" content="noindex, nofollow" />
   <meta name="googlebot" content="noindex, nofollow" />
@@ -23,7 +23,6 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="accessibility-usability.html">Accessibility and Usability</a></li>
       <li><a href="browser-features.html">Browser Features</a></li>
-      <li><a href="#">Page 4</a></li>
       <li class="active"><a href="gpii-common-terms.html"><abbr>GPII</abbr> Common Terms</a></li>
       <li><a href="glossary.html"><abbr>ICT</abbr> Accessibility Glossary</a></li>
       <li><a href="links.html">Links</a></li>
@@ -55,16 +54,6 @@
         <th scope="col" id="th-description" class="sorttable_nosort">Description</th>
       </tr>
     </thead>
-    <tfoot>
-      <tr>
-        <th>Identifier</th>
-        <th>Application type</th>
-        <th>Data type</th>
-        <th>Value range</th>
-        <th>Default value</th>
-        <th>Description</th>
-      </tr>
-    </tfoot>
     <tbody>
       <tr>
         <th headers="th-name" scope="row">highContrastEnabled</th>
@@ -337,6 +326,17 @@
       </tr>
       -->
     </tbody>
+    <!-- tfoot is also allowed before tbody (https://www.w3.org/TR/html5/tabular-data.html#the-table-element) but https://validator.w3.org/ complains about it -->
+    <tfoot>
+      <tr>
+        <th>Identifier</th>
+        <th>Application type</th>
+        <th>Data type</th>
+        <th>Value range</th>
+        <th>Default value</th>
+        <th>Description</th>
+      </tr>
+    </tfoot>
   </table>
   </main>
 
@@ -346,7 +346,7 @@
     <strong>Example Site for GTx HDM1.2aX</strong> by <a href="https://github.com/REMEXLabs"><abbr>HdM</abbr> REMEXLabs</a> is licensed under a 
     <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
     </p>
-    <p><a href="https://github.com/REMEXLabs/GTx_HDM1.2aX">GitHub repository</a> | <a href="publisherinfo.html">Publisher information / <span lang="de">Impressum</span></a></p>
+    <p><a href="contact-form.html">Contact form</a> | <a href="publisherinfo.html">Publisher information / <span lang="de">Impressum</span></a> | <a href="https://github.com/REMEXLabs/GTx_HDM1.2aX">GitHub repository</a></p>
   </footer>
 </body>
 </html>
