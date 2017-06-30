@@ -6,6 +6,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="./css/gtx_hdm12ax.css" title="Default style" />
   <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/systemcolours.css" title="System colours" />
   <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/default.css" title="No colours" />
+  <script src="js/sorttable.js"></script>
   <meta name="robots" content="noindex, nofollow" />
   <meta name="googlebot" content="noindex, nofollow" />
 </head>
@@ -42,7 +43,7 @@
     When no default value is defined, this merely means that <abbr>GPII</abbr> does not specify a default value,
     not that specific applications cannot have their own default values.
   </p>
-  <table>
+  <table class="scrollable sortable">
     <caption>Table with selected “common terms” defined in <abbr>GPII</abbr></caption>
     <thead>
       <tr>
@@ -51,7 +52,7 @@
         <th scope="col" id="th-datatype">Data type</th>
         <th scope="col" id="th-valuerange" abbr="Range">Value range</th>
         <th scope="col" id="th-default" abbr="Default">Default value</th>
-        <th scope="col" id="th-description">Description</th>
+        <th scope="col" id="th-description" class="sorttable_nosort">Description</th>
       </tr>
     </thead>
     <tfoot>
@@ -306,6 +307,24 @@
           especially for people wit a general learning disability (<abbr>UK</abbr>)&nbsp;/ 
           intellectual disability (<abbr>ID</abbr>) (<abbr>USA</abbr>).
         </td>
+      </tr>
+
+      <tr>
+        <th headers="th-name" scope="row">selfVoicingEnabled</th>
+        <td headers="th-apptype">Self-voicing</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determines whether an application's self-voicing feature should be enabled.</td>
+      </tr>
+
+      <tr>
+        <th headers="th-name" scope="row">language </th>
+        <td headers="th-apptype">General settings</td>
+        <td headers="th-datatype">String</td>
+        <td headers="th-valuerange">Language tags conforming to <a href="https://tools.ietf.org/html/bcp47"><abbr title="Internet Engineering Task Force">IETF</abbr> <abbr title="Best Current Practice">BCP</abbr> 47</a>.</td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description">The language of the application's user interface or the content.</td>
       </tr>
       <!-- 
       <tr>
