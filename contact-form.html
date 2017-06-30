@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <title>Contact Form | GTx HDM1.2aX</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/gtx_hdm12ax.css" title="Default style" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/systemcolours.css" title="System colours" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/nocolours.css" title="No colours" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+</head>
+<body id="error404">
+  <header>
+    <h1><span class="h1txt">Contact Form</span></h1>
+    <p class="skiplink"><a class="skiplink" href="#main">Skip to main content</a></p>
+  </header>
+
+  <nav>
+    <h2>Site Navigation</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="accessibility-usability.html">Accessibility and Usability</a></li>
+      <li><a href="browser-features.html">Browser Features</a></li>
+      <li><a href="gpii-common-terms.html"><abbr>GPII</abbr> Common Terms</a></li>
+      <li><a href="glossary.html"><abbr>ICT</abbr> Accessibility Glossary</a></li>
+      <li><a href="links.html">Links</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <p>This form exists for instructional purposes only. It does not submit any data to a server that would process these data.</p>
+    <form accept-charset="UTF-8" action="contact-form.html" autocomplete="off" enctype="text/plain" method="post" name="contactform" id="contactform">
+      <fieldset>
+        <legend>Your details</legend>
+        <p><label for="name" class="forinput">Name:&nbsp;</label> <input id="name" name="name" type="text" minlength="2" maxlength="100" size="40" /></p>
+        <p><label for="mail" class="forinput">E-mail (required):&nbsp;</label> <input id="mail" name="mail" type="email" minlength="6" maxlength="100" size="40" required="required" /></p>
+        <p><label for="phon" class="forinput">Phone:&nbsp;</label> <input id="phon" name="phon" type="tel" minlength="6" maxlength="50" size="40" /></p>
+      </fieldset>
+      <div class="fieldset">
+        <p><label for="subject" class="forinput">Subject:&nbsp;</label> <input id="subject" name="subject" type="text" minlength="0" maxlength="50" size="40" />
+        </p>
+        <p><label for="category" class="forselect">Category:&nbsp;</label>
+          <select id="category" name="category">
+            <option value="cs">Customer service</option>
+            <option value="orders">Orders</option>
+            <option value="events">Event enquiries</option>
+            <option value="feedback">Website feedback</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+        <p><label for="message" class="fortextarea">Message:&nbsp;</label>
+          <textarea cols="70" rows="10" id="message" name="message"></textarea>
+        </p>
+      </div>
+      <div class="fieldset buttons">
+        <p>
+          <button type="submit" id="contact-submit-button">Submit form</button>
+          <button type="reset" id="contact-clear-button">Clear form</button>
+          <!-- 
+          <button type="submit" disabled="disabled">Submit form</button>
+          <button type="reset" disabled="disabled">Clear form</button>
+          -->
+        </p>
+      </div>
+    </form>
+
+    <!-- 
+    <div>
+      <form action="https://duckduckgo.com/" method="GET" name="x" target="_blank">
+       <label for="q">DuckDuckGo: </label> <input type="text" name="q" id="q" autocomplete="off" />
+       <button type="submit">Search&hellip;</button>
+      </form>
+    </div>
+    -->
+  </main>
+
+  <footer>
+    <p id="licence">
+    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="./img/cc_by_4.0_88x31.png" /></a><br />
+    <strong>Example Site for GTx_HDM1.2aX</strong> by <a href="https://github.com/REMEXLabs"><abbr>HdM</abbr> REMEXLabs</a> is licensed under a 
+    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </p>
+    <p><a href="contact-form.html">Contact form</a> | <a href="publisherinfo.html">Publisher information / <span lang="de">Impressum</span></a> | <a href="https://github.com/REMEXLabs/GTx_HDM1.2aX">GitHub repository</a></p>
+    <!-- <p><a href="http://jigsaw.w3.org/css-validator/check/referer"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" /></a></p> -->
+  </footer>
+</body>
+</html>
