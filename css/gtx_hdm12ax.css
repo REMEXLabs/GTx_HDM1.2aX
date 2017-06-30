@@ -179,6 +179,14 @@ input:focus, select:focus, textarea:focus, button:focus, button:hover {
   background-color: #F5FFE0;
   color: inherit;
 }
+input:valid {
+  color: #4b6400; /*contrast ratio #4b6400 on #F5FFE0: 6.49:1 */
+}
+input:invalid {
+  color: #B20000; /*contrast ratio #B20000 on #F5FFE0: 7.0:1 */
+}
+/*input:invalid:after { content: "Invalid e-mail address"; color: #B20000; background-color: transparent; border: 1px dotted #B20000; display: block; }*//*has no effect*/
+/*input:valid: ~ .input-validation::before { content: '\002714'; color: #4b6400;}*/
 button {
   font-size: .9em;
 }
