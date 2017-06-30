@@ -19,17 +19,21 @@
   <nav>
     <h2>Site Navigation</h2>
     <ul>
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html" rel="home">Home</a></li>
       <li><a href="accessibility-usability.html">Accessibility and Usability</a></li>
       <li><a href="browser-features.html">Browser Features</a></li>
       <li><a href="gpii-common-terms.html"><abbr>GPII</abbr> Common Terms</a></li>
-      <li><a href="glossary.html"><abbr>ICT</abbr> Accessibility Glossary</a></li>
+      <li><a href="glossary.html" rel="glossary"><abbr>ICT</abbr> Accessibility Glossary</a></li>
       <li><a href="links.html">Links</a></li>
     </ul>
   </nav>
 
   <main id="main">
-    <p>This form exists for instructional purposes only. It does not submit any data to a server that would process these data.</p>
+    <p>This form exists for instructional purposes only. It does not submit any data to a server that would process these data.
+      Since the form sends an
+      <a href="https://www.w3schools.com/tags/ref_httpmethods.asp"><abbr>HTTP</abbr> POST request</a>
+      to itself, <abbr>i.e.</abbr> to a static <abbr>HTML</abbr> page, submitted data are simply lost.
+    </p>
     <form accept-charset="UTF-8" action="contact-form.html" autocomplete="off" enctype="text/plain" method="post" name="contactform" id="contactform">
       <fieldset>
         <legend>Your details</legend>
