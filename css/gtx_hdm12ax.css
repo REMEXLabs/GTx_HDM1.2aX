@@ -136,8 +136,21 @@ tbody th {
   text-align: left;
 }
 
+form {
+  border: 1px solid #076199;
+  border-radius: 6pt;
+  padding: 10px;
+}
 form fieldset {
   padding-bottom: 4px;
+}
+fieldset, legend {
+  border: 1px solid #A1A7B2;
+  border-radius: 6pt;
+}
+legend {
+  margin-left: 10px;
+  padding: 1px 4px 1px 4px;
 }
 form fieldset, form .fieldset {
   margin-left: 0;
@@ -157,13 +170,20 @@ label.forinput, label.forselect, label.fortextarea {
   display: inline-block;/*without this, width has no effect*/
   width: 9em;/*110pt*/
 }
-input, select {
+/*input, select, textarea { border-width: .1px; border-radius: 4px; }*/
+input, select, textarea {
   padding: 4px;
 }
-input:focus, select:focus, textarea:focus {
+input:focus, select:focus, textarea:focus, button:focus, button:hover {
   border: 2px solid #076199;
   background-color: #F5FFE0;
   color: inherit;
+}
+button {
+  font-size: .9em;
+}
+button:focus, button:hover {
+  border-radius: 4px;
 }
 
 
@@ -198,6 +218,7 @@ input:focus, select:focus, textarea:focus {
     float: left;
     clear: right;
     padding-left: 10px;
+    padding-bottom: 20px;
     background-color: transparent;
   }
   header { padding-top: 12px; }
@@ -211,7 +232,7 @@ input:focus, select:focus, textarea:focus {
     display: none;
   }
   footer {
-    padding: 4px 5px 4px 10px;
+    padding: 10px 5px 10px 10px;
     /*margin-top: 40px;*//*does not have expected effect, hence border-top*/
     border-top: 40px solid #FFFBFA;
   }
