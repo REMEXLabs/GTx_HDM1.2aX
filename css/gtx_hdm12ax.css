@@ -136,6 +136,36 @@ tbody th {
   text-align: left;
 }
 
+form fieldset {
+  padding-bottom: 4px;
+}
+form fieldset, form .fieldset {
+  margin-left: 0;
+  padding-left: 0;
+}
+form fieldset p, form .fieldset p {
+  margin-left: 10px;
+}
+form p {
+  margin-top: 5pt;
+  margin-bottom: 5pt;
+}
+form p label {
+  vertical-align: top;
+}
+label.forinput, label.forselect, label.fortextarea {
+  display: inline-block;/*without this, width has no effect*/
+  width: 9em;/*110pt*/
+}
+input, select {
+  padding: 4px;
+}
+input:focus, select:focus, textarea:focus {
+  border: 2px solid #076199;
+  background-color: #F5FFE0;
+  color: inherit;
+}
+
 
 /* "Media Queries: How to target desktop, tablet and mobile?": https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile 
  & query https://duckduckgo.com/?q=tablet+screen+size+width+pixels&ia=web */
@@ -182,7 +212,8 @@ tbody th {
   }
   footer {
     padding: 4px 5px 4px 10px;
-    margin-top: 40px;
+    /*margin-top: 40px;*//*does not have expected effect, hence border-top*/
+    border-top: 40px solid #FFFBFA;
   }
 
   a.skiplink {
