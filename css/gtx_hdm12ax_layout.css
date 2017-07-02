@@ -16,10 +16,11 @@ h1 {
 nav {
   margin-top: 0px;
   padding: 5px 10px 20px 10px;
-  border-top-width: 10px;
+  border-top-width: 2px;
   border-top-style: solid;
-  border-bottom-width: 10px;
+  border-bottom-width: 2px;
   border-bottom-style: solid;
+  border-radius: 6px;
 }
 nav h2 {
   margin-top: 0px;

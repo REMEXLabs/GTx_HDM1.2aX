@@ -26,16 +26,23 @@ h1 {
 
 nav {
   background-color: transparent;
-  margin-top: 0px;
-  padding: 5px 10px 20px 10px;
-  border-top: 10px solid #FFFBFA;
-  border-bottom: 10px solid #FFFBFA;
+  margin-top: 10px;
+  padding: 5px 10px 10px 10px;
+  /*border-top: 10px solid #FFFBFA;
+  border-bottom: 10px solid #FFFBFA;*/
+  border-top: 2px solid #076199;
+  border-bottom: 2px solid #076199;
+  border-radius: 6px;
 }
 nav h2 {
   background-color: transparent;
   color: #076199;
   margin-top: 0px;
+  margin-bottom: 0px;
   padding: 0;
+}
+nav ul {
+  margin-top: 10px;
 }
 nav ul, nav ul li {
   margin-left: 0px;
