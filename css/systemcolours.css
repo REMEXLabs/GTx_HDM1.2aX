@@ -1,9 +1,9 @@
+@import url("gtx_hdm12ax_layout.css");
 
 body {
   font-family: sans-serif;
   background-color: Window; color: WindowText;
 }
-
 header {
   background-color: transparent;
   color: inherit;
@@ -14,97 +14,53 @@ nav {
   background-color: ScrollBar;
   color: MenuText;
 }
-
 nav h2 {
   background-color: transparent;
   color: MenuText;
 }
-
-nav > ul {
+/*nav > ul {
   color: inherit;
   background-color: transparent;
-}
-
+}*/
 nav ul, nav ul li {
-  margin-left: 0px;
-  padding-left: 0px;
-  margin-bottom: 4px;
+  /* see gtx_hdm12ax_layout.css */
 }
 nav ul li {
-  list-style-type: none;
+  /* see gtx_hdm12ax_layout.css */
   color: inherit;
   background-color: transparent; 
 }
 
-
-nav > ul > li > ul {
-  color: inherit;
-  background-color: transparent;
-}
-
-nav > ul > li.active a, nav > ul > li > ul > li.active a {
-  border-left: 10px solid InactiveBorder;
-  background-color: InactiveBorder;
-  color: CaptionText;
-}
-
 nav li.active a {
-  border-right: none;
-  border-left: none;
   background-color: InactiveBorder;
   color: CaptionText;
 }
-
-nav li.active a:hover, nav li.active a:focus {
-  border-right: none;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
+nav ul li.active a:hover, nav ul li.active a:focus, nav ul li a:active {
+  /*border-color: ActiveBorder;*/
+  border-color: InactiveBorder;
   background-color: InactiveBorder;
   color: CaptionText;
-}
-
-nav > ul > li.active > ul > li a:link,
-nav > ul > li.active > ul > li a:visited {
-  border-top: none;
-  border-right: 10px solid InactiveBorder;
-  border-bottom: none;
-  border-left: 10px solid InactiveBorder;
-}
-
-nav > ul > li.active > ul > li a:hover,
-nav > ul > li.active > ul > li a:focus,
-nav > ul > li.active > ul > li a:active {
-  border-top: none;
-  border-right: 10px solid ActiveCaption;
-  border-bottom: none;
-  border-left: 10px solid ActiveCaption;
 }
 
 nav a:link,
 nav a:visited, 
 nav a:hover, nav a:focus,
 nav a:active {
-  font-size: 1em;
   text-decoration: none;
-  padding-left: 2px;
 }
 
 nav a:link,
 nav a:visited {
-  border-top: 1px solid Menu;
-  border-right: 10px solid Menu;
-  border-bottom: 1px solid Menu;
-  border-left: 10px solid Menu;
+  border-color: Menu;
   background-color: Menu;
   color: MenuText;
 }
 
 nav a:hover, nav a:focus,
 nav a:active {
-  border-top: 1px solid Scrollbar;
-  border-right: 10px solid ActiveCaption;
-  border-bottom: 1px solid Scrollbar;
-  border-left: 10px solid ActiveCaption;
+  border-color: Scrollbar;
+  /*border-color: ActiveCaption;*/
+  border-radius: .6em;
 }
 
 a:link, a:visited {
@@ -197,7 +153,7 @@ tbody th {
   footer p { margin-top: 2px; margin-bottom: 2px; padding: 0;}
   a.skiplink, a.skiplink:hover, a.skiplink:focus, a.skiplink:active {
     background:transparent;
-    color: white;
+    color: MenuText;
   }
 } /* @media (min-width:320px) */
 
@@ -231,7 +187,7 @@ tbody th {
   }
   a.skiplink:focus {
     background:transparent;
-    color: white;
+    color: MenuText;
   }
 } /* end @media (min-width:801px) */
 
