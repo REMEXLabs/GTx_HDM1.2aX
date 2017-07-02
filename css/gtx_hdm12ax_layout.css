@@ -1,0 +1,234 @@
+/* Stylesheet for layout, fonts etcetera but no colours. */
+
+html, body, header, h1 { margin: 0; padding: 0; }
+body {
+  font-family: 'Libre Baskerville', 'Trebuchet MS', Verdana, Helvetica, sans-serif;
+  margin-top: 0; padding-top: 0;
+}
+header {
+  padding-left: 10px;
+}
+h1 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+nav {
+  margin-top: 0px;
+  padding: 5px 10px 20px 10px;
+  border-top-width: 10px;
+  border-top-style: solid;
+  border-bottom-width: 10px;
+  border-bottom-style: solid;
+}
+nav h2 {
+  margin-top: 0px;
+  padding: 0;
+}
+nav ul, nav ul li {
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-bottom: 4px;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li a {
+  font-size: 1em;
+  display: block;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px;
+  padding-left: 10px;
+}
+nav ul li a:hover, nav ul li a:focus, nav ul li a:active  {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: .6em;
+}
+nav ul li.active a, nav ul li.active a:link, nav ul li.active a:hover, nav ul li.active a:focus, nav ul li.active a:active {
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: .6em;
+  cursor: default;
+}
+a:hover, a:focus, a:active {
+  text-decoration: none;
+}
+
+footer {
+  clear: left;
+}
+
+footer a:link, footer a:visited {
+  /*colour defined elsewhere*/
+}
+
+footer a:hover, footer a:focus, footer a:active {
+  text-decoration: none;
+}
+
+h2, h3, h4, h5, h6 {
+  /*colour defined elsewhere*/
+}
+
+main ul li {
+  list-style-type: square;
+}
+
+dl.glossary dt, dl.glossary dd {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  padding: 4px;
+  margin-bottom: 2px;
+}
+dl.glossary dt { margin-top: 6px;
+  font-weight: bold;
+}
+dl.glossary dd {
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+
+kbd {
+  border-width: 1px;
+  border-style: solid;
+  padding: 1px 2px;
+  border-radius: 4px;
+}
+
+p.skiplink { margin: -5px 0 0 0; padding: 0 0 2px 0; }
+
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+th, td {
+  border-width: 1px;
+  border-style: solid;
+  padding: 4px 8px;
+}
+table caption {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+tbody th {
+  text-align: left;
+}
+
+form {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 6pt;
+  padding: 10px;
+}
+form fieldset {
+  padding-bottom: 4px;
+}
+fieldset, legend {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 6pt;
+}
+legend {
+  margin-left: 10px;
+  padding: 1px 4px 1px 4px;
+}
+form fieldset, form .fieldset {
+  margin-left: 0;
+  padding-left: 0;
+}
+form fieldset p, form .fieldset p {
+  margin-left: 10px;
+}
+form p {
+  margin-top: 5pt;
+  margin-bottom: 5pt;
+}
+form p label {
+  vertical-align: top;
+}
+label.forinput, label.forselect, label.fortextarea {
+  display: inline-block;/*without this, width has no effect*/
+  width: 9em;/*110pt*/
+}
+/*input, select, textarea { border-width: .1px; border-radius: 4px; }*/
+input, select, textarea {
+  padding: 4px;
+}
+input:focus, select:focus, textarea:focus, button:focus, button:hover {
+  border-width: 2px;
+  border-style: solid;
+}
+/*
+input:valid {}
+input:invalid {}
+*/
+button {
+  font-size: .9em;
+}
+button:focus, button:hover {
+  border-radius: 4px;
+}
+
+
+/* "Media Queries: How to target desktop, tablet and mobile?": https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile 
+ & query https://duckduckgo.com/?q=tablet+screen+size+width+pixels&ia=web */
+@media (min-width:320px) {
+  main, nav {
+    float: none;
+  }
+  header, main {
+    padding-left: 5px;
+  }
+  nav h2 {
+    display: block;
+  }
+  footer {
+    padding: 1px 0px 1px 5px;
+    margin-top: 10px;
+    border: none;
+  }
+  footer p { margin-top: 2px; margin-bottom: 2px; padding: 0;}
+  a.skiplink, a.skiplink:hover, a.skiplink:focus, a.skiplink:active {
+    /*colour defined elsewhere*/
+  }
+} /* @media (min-width:320px) */
+
+
+@media (min-width:801px) {
+  main {
+    width: 78%;
+    float: left;
+    clear: right;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    /*colour defined elsewhere*/
+  }
+  header { padding-top: 12px; }
+  nav {
+    min-width: 15em;
+    max-width: 20em;
+    float: left; 
+    clear: left;
+  }
+  nav h2 {
+    display: none;
+  }
+  footer {
+    padding: 10px 5px 10px 10px;
+    /*margin-top: 40px;*//*does not have expected effect, hence border-top*/
+    border-top-style: solid;
+    border-top-width: 40px;
+    /*colour defined elsewhere*/
+  }
+
+  a.skiplink {
+    /*colour defined elsewhere*/
+  }
+  a.skiplink:focus {
+    /*colour defined elsewhere*/
+  }
+} /* end @media (min-width:801px) */
+
