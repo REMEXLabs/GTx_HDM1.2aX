@@ -1,0 +1,31 @@
+/* high contrast: white on black */
+@import url("gtx_hdm12ax_layout.css");
+
+body {
+  color: white;
+  background-color: black;
+}
+
+a:link, a:visited, a:hover, a:focus, a:active {
+  color: white;
+  background-color: transparent;
+}
+nav ul li a:link, nav ul li a:visited, nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
+  color: white;
+  background-color: transparent;
+}
+a.skiplink {
+  background: black;
+  color: black;
+}
+a.skiplink:hover, a.skiplink:focus, a.skiplink:active {
+  background: transparent;
+  color: white;
+}
+footer {
+  border-top-color: black;
+}
+footer p#licence {
+  border-top: 2px solid white;
+  padding-top: 5px;
+}
