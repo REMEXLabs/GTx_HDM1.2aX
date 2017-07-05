@@ -305,7 +305,7 @@
 
       <tr>
         <th headers="th-name" scope="row">selfVoicingEnabled</th>
-        <td headers="th-apptype">Self-voicing</td>
+        <td headers="th-apptype">Self-voicing applications</td>
         <td headers="th-datatype">Boolean</td>
         <td headers="th-valuerange">true&nbsp;/ false</td>
         <td headers="th-default">false</td>
@@ -320,6 +320,136 @@
         <td headers="th-default">no default</td>
         <td headers="th-description">The language of the application's user interface or the content.</td>
       </tr>
+
+      <tr>
+        <th headers="th-name" scope="row">speechRate</th>
+        <td headers="th-apptype">Screen reader</td>
+        <td headers="th-datatype">Integer</td>
+        <td headers="th-valuerange">1 .. * (words per minute)</td>
+        <td headers="th-default">150</td>
+        <td headers="th-description">How fast the screen reader should speak; speed is defined in words per minute.
+          Many screen readers don't express speech rate in words per minute, so the value for the common term will need to be converted.
+          Note that some screen readers expect an integer and some versions crashed when give a floating point value.
+        </td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">trackingTTS</th>
+        <td headers="th-apptype">Screen reader</td>
+        <td headers="th-datatype">array of Strings</td>
+        <td headers="th-valuerange">one or more of: mouse, caret, focus</td>
+        <td headers="th-default">focus</td>
+        <td headers="th-description">How the screen reader should track what the user wants to be read.
+          <code>mouse</code>: follow the mouse cursor.
+          <code>caret</code>: follow the edit cursor.
+          <code>focus</code>: follow keyboard focus.
+          These values can be combined.
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">speakTutorialMessages</th>
+        <td headers="th-apptype">Screen reader</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determines whether the screen reader should read as object in the interface received focus,
+          for example, how to interact with the currently focused object.
+          <br />This common term is based on &ldquo;Enable Tutorial Messages&rdquo; in Orca.
+          Note: Not to be confused with reporting tooltips or object descriptions.
+        </td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">keyEcho</th>
+        <td headers="th-apptype">Screen reader</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">true</td>
+        <td headers="th-description">Determines whether the screen reader should speak or &ldquo;echo&rdquo; each character typed by the user.</td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">wordEcho</th>
+        <td headers="th-apptype">Screen reader</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determines whether the screen reader should speak or &ldquo;echo&rdquo; each word typed by the user.
+          <code>wordEcho</code> and <code>keyEcho</code> are not mutually exclusive.
+        </td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">announceCapitals</th>
+        <td headers="th-apptype">Screen reader</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determines whether the screen reader should in some way announce that a letter is a capital.
+          For example, <abbr>NVDA</abbr> can be set to say &ldquo;cap&rdquo; for capitals.
+        </td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row"></th>
+        <td headers="th-apptype">Screen reader</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determines whether the screen reader's Braille output should be enabled.
+          <code>screenReaderBrailleOutput</code> is not mutually exclusive with <code>screenReaderTTSEnabled</code>.
+        </td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">punctuationVerbosity</th>
+        <td headers="th-apptype">Screen reader</td>
+        <td headers="th-datatype">String</td>
+        <td headers="th-valuerange">One of the following values: none, some, most, all</td>
+        <td headers="th-default">some</td>
+        <td headers="th-description">Determines the level of detail the screen reader should use when encountering pronunciation.
+          <code>none</code>: no punctuation marks are read aloud.
+          <code>some</code>: some punctuation marks are read aloud.
+          <code>most</code>: most punctuation marks are read aloud.
+          <code>all</code>: all punctuation marks are read aloud.
+      </td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">readingUnit</th>
+        <td headers="th-apptype">Screen reader</td>
+        <td headers="th-datatype">String</td>
+        <td headers="th-valuerange">One of the following values: word, line, sentence, paragraph</td>
+        <td headers="th-default">sentence</td>
+        <td headers="th-description"><!--@@add description--></td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">auditoryOutLanguage</th>
+        <td headers="th-apptype">Screen reader</td>
+        <td headers="th-datatype">String</td>
+        <td headers="th-valuerange">Language tags conforming to <a href="https://tools.ietf.org/html/bcp47"><abbr title="Internet Engineering Task Force">IETF</abbr> <abbr title="Best Current Practice">BCP</abbr> 47</a>.</td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description">Determines the text-to-speech language used by the screen reader. (This should not prevent live switching to other languages based on language switches identified inside documents.)</td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">screenReaderTTSEnabled</th>
+        <td headers="th-apptype">Screen reader</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determines whether synthetic speech should be enabled in the screen reader.
+          <code>screenReaderTTSEnabled</code> is not mutually exclusive with <code>screenReaderBrailleOutput</code>.
+        </td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">pitch</th>
+        <td headers="th-apptype">Screen reader</td>
+        <td headers="th-datatype">Float</td>
+        <td headers="th-valuerange">0.0 .. 1.0</td>
+        <td headers="th-default">0.5</td>
+        <td headers="th-description">Determines the pitch for the screen reader's synthetic speech.</td>
+      </tr>
+      <tr>
+        <th headers="th-name" scope="row">volumeTTS</th>
+        <td headers="th-apptype">Screen reader</td>
+        <td headers="th-datatype">Float</td>
+        <td headers="th-valuerange">0.0 .. 1.0</td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description">Determines the volume for the screen reader's synthetic speech.</td>
+      </tr>
+
       <!-- 
       <tr>
         <th headers="th-name" scope="row"></th>
