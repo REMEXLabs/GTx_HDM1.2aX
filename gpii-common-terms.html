@@ -2,7 +2,7 @@
 <html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <title>GPII Common Terms | GTx HDM1.2aX</title>
+  <title>GPII.eu Common Terms | GTx HDM1.2aX</title>
   <link rel="stylesheet" type="text/css" media="screen" href="./css/gtx_hdm12ax.css" title="Default style" id="rel-css-default" />
   <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/black-on-white.css" title="Black on white (high contrast)" id="rel-css-black-on-white" />
   <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/white-on-black.css" title="White on black (high contrast)" id="rel-css-white-on-black" />
@@ -11,7 +11,7 @@
   <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/systemcolours.css" title="System colours" id="rel-css-system-colours" />
   <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/nocolours.css" title="&lsquo;No colours&rsquo;" id="rel-css-no-colours" />
   <script src="js/sorttable.js" type="text/javascript"></script>
-  <style type="text/css"> tr.screenreader, tr.keyboardaccess { display: none; }
+  <style type="text/css"> tr.screenreader { display: none; }
   </style>
   <meta name="robots" content="noindex, nofollow" />
   <meta name="googlebot" content="noindex, nofollow" />
@@ -20,7 +20,7 @@
 
 <body>
   <header>
-    <h1><span class="h1txt"><abbr>GPII</abbr> Common Terms</span></h1>
+    <h1><span class="h1txt"><abbr>GPII</abbr>.eu Common Terms</span></h1>
     <p class="skiplink"><a class="skiplink" href="#main">Skip to main content</a></p>
   </header>
 
@@ -45,8 +45,11 @@
     For example, <code>cursorSize</code> can be set on some operating systems but not by means of <abbr>CSS</abbr> styles.
   </p>
   <p>All “common terms” reside in the namespace
-    <code>http://registry.gpii.org/common/</code>; in order to save space, this namespace is not mentioned in the table below.
-    When no default value is defined, this merely means that <abbr>GPII</abbr> does not specify a default value,
+    <code>http://terms.gpii.eu/</code>; in order to save space, this namespace is not mentioned in the table below.
+    The fully qualified name of a term includes the namespace, for example
+    <code>http://terms.gpii.eu/highContrastEnabled</code>.
+  </p>
+  <p>When no default value is defined, this merely means that <abbr>GPII</abbr> does not specify a default value,
     not that specific applications cannot have their own default values.
   </p>
 
@@ -63,7 +66,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr class="screenenhancement">
+      <tr class="screenenhancement cloud4all">
         <th headers="th-name" scope="row">highContrastEnabled</th>
         <td headers="th-apptype">Screen enhancement</td>
         <td headers="th-datatype">Boolean</td>
@@ -71,7 +74,7 @@
         <td headers="th-default">false</td>
         <td headers="th-description">Determines whether a high-contrast theme should be enabled.</td>
       </tr>
-      <tr class="screenenhancement">
+      <tr class="screenenhancement cloud4all">
         <th headers="th-name" scope="row">highContrastTheme</th>
         <td headers="th-apptype">Screen enhancement</td>
         <td headers="th-datatype">String</td>
@@ -79,20 +82,7 @@
         <td headers="th-default">black-white</td>
         <td headers="th-description">The high-contrast theme. The chosen theme only becomes active when <code>highContrastEnabled</code> is set to <code>True</code>.</td>
       </tr>
-      <tr class="screenenhancement">
-        <th headers="th-name" scope="row">fontSize</th>
-        <td headers="th-apptype">Screen enhancement</td>
-        <td headers="th-datatype">Float</td>
-        <td headers="th-valuerange">0.1 .. * (in points)</td>
-        <td headers="th-default">12</td>
-        <td headers="th-description">Font size in points.
-          Note that <abbr>CSS</abbr> can describe
-          <a href="https://www.w3.org/TR/CSS21/fonts.html#propdef-font-size"><code>font-size</code></a> 
-          using various types of values. See also, for example,
-          <a href="http://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/"><abbr>CSS</abbr> Font-Size: em vs. px vs. pt vs. percent</a>.
-        </td>
-      </tr>
-      <tr class="screenenhancement">
+      <tr class="screenenhancement cloud4all">
         <th headers="th-name" scope="row">cursorSize</th>
         <td headers="th-apptype">Screen enhancement</td>
         <td headers="th-datatype">Float</td>
@@ -100,7 +90,7 @@
         <td headers="th-default">0.5</td>
         <td headers="th-description">Cursor size.</td>
       </tr>
-      <tr class="screenenhancement">
+      <tr class="screenenhancement cloud4all">
         <th headers="th-name" scope="row">mouseTrailing</th>
         <td headers="th-apptype">Screen enhancement</td>
         <td headers="th-datatype">String</td>
@@ -108,7 +98,7 @@
         <td headers="th-default">no default</td>
         <td headers="th-description">Length of the mouse trail. The maximum value for Windows 7 is probably 6.</td>
       </tr>
-      <tr class="screenenhancement">
+      <tr class="screenenhancement cloud4all">
         <th headers="th-name" scope="row">linkAdaptation</th>
         <td headers="th-apptype">Screen enhancement</td>
         <td headers="th-datatype">String</td>
@@ -122,7 +112,7 @@
           <!-- See also https://en.wikipedia.org/wiki/Adaptive_hypermedia#Link_adaptation_2 -->
         </td>
       </tr>
-      <tr class="screenenhancement">
+      <tr class="screenenhancement cloud4all">
         <th headers="th-name" scope="row">colourSaturation</th>
         <td headers="th-apptype">Screen enhancement</td>
         <td headers="th-datatype">Integer</td>
@@ -130,7 +120,7 @@
         <td headers="th-default">no default</td>
         <td headers="th-description">Determines the colour saturation on a screen (hardware).</td>
       </tr>
-      <tr class="screenenhancement">
+      <tr class="screenenhancement cloud4all">
         <th headers="th-name" scope="row">sharpness</th>
         <td headers="th-apptype">Screen enhancement</td>
         <td headers="th-datatype">Integer</td>
@@ -138,7 +128,7 @@
         <td headers="th-default">no default</td>
         <td headers="th-description">Determines the sharpness on a screen (hardware).</td>
       </tr>
-      <tr class="screenenhancement">
+      <tr class="screenenhancement cloud4all">
         <th headers="th-name" scope="row">contrast</th>
         <td headers="th-apptype">Screen enhancement</td>
         <td headers="th-datatype">Integer</td>
@@ -147,7 +137,7 @@
         <td headers="th-description">Determines the contrast on a screen (hardware).</td>
       </tr>
 
-      <tr class="screenmagnification">
+      <tr class="screenmagnification cloud4all">
         <th headers="th-name" scope="row">magnifierEnabled</th>
         <td headers="th-apptype">Screen magnification</td>
         <td headers="th-datatype">Boolean</td>
@@ -155,7 +145,7 @@
         <td headers="th-default">false</td>
         <td headers="th-description">Determines whether a <a href="https://en.wikipedia.org/wiki/Screen_magnifier">screen magnifier</a> should be turned on.</td>
       </tr>
-      <tr class="screenmagnification">
+      <tr class="screenmagnification cloud4all">
         <th headers="th-name" scope="row">magnification</th>
         <td headers="th-apptype">Screen magnification</td>
         <td headers="th-datatype">Float</td>
@@ -163,7 +153,7 @@
         <td headers="th-default">1</td>
         <td headers="th-description">The magnification level. The value <code>1</code> means no magnification.</td>
       </tr>
-      <tr class="screenmagnification">
+      <tr class="screenmagnification cloud4all">
         <th headers="th-name" scope="row">tracking</th>
         <td headers="th-apptype">Screen magnification</td>
         <td headers="th-datatype">array of Strings</td>
@@ -176,7 +166,7 @@
           These values can be combined.
         </td>
       </tr>
-      <tr class="screenmagnification">
+      <tr class="screenmagnification cloud4all">
         <th headers="th-name" scope="row">magnifierPosition</th>
         <td headers="th-apptype">Screen magnification</td>
         <td headers="th-datatype">String</td>
@@ -184,7 +174,7 @@
         <td headers="th-default">TopHalf</td>
         <td headers="th-description">Where the magnifier should be positioned on the screen.</td>
       </tr>
-      <tr class="screenmagnification">
+      <tr class="screenmagnification cloud4all">
         <th headers="th-name" scope="row">invertColours</th>
         <td headers="th-apptype">Screen magnification</td>
         <td headers="th-datatype">Boolean</td>
@@ -195,7 +185,7 @@
           colour inversion is often used to get rid of an overwhelming white background.
         </td>
       </tr>
-      <tr class="screenmagnification">
+      <tr class="screenmagnification cloud4all">
         <th headers="th-name" scope="row">showCrosshairs</th>
         <td headers="th-apptype">Screen magnification</td>
         <td headers="th-datatype">Boolean</td>
@@ -204,7 +194,7 @@
         <td headers="th-description">Determines whether the normal mouse pointer should be replaced by (or enhanced with) crosshairs to make the current mouse position easier to sea.</td>
       </tr>
 
-      <tr class="augmentations-media">
+      <tr class="augmentations-media cloud4all">
         <th headers="th-name" scope="row">captionsEnabled</th>
         <td headers="th-apptype">Alternatives and augmentations for media or text</td>
         <td headers="th-datatype">Boolean</td>
@@ -215,7 +205,7 @@
           Captions also describe important non-speech sounds.
         </td>
       </tr>
-      <tr class="augmentations-media">
+      <tr class="augmentations-media cloud4all">
         <th headers="th-name" scope="row">subtitlesEnabled</th>
         <td headers="th-apptype">Alternatives and augmentations for media or text</td>
         <td headers="th-datatype">Boolean</td>
@@ -223,7 +213,7 @@
         <td headers="th-default">false</td>
         <td headers="th-description">Determines whether subtitles should be turned on.</td>
       </tr>
-      <tr class="augmentations-media">
+      <tr class="augmentations-media cloud4all">
         <th headers="th-name" scope="row">audioDescriptionEnabled</th>
         <td headers="th-apptype">Alternatives and augmentations for media or text</td>
         <td headers="th-datatype">Boolean</td>
@@ -234,7 +224,7 @@
           should be turned on. (This is sometimes done by providing an alternative video that has audio description.)
         </td>
       </tr>
-      <tr class="augmentations-media">
+      <tr class="augmentations-media cloud4all">
         <th headers="th-name" scope="row">signLanguageEnabled</th>
         <td headers="th-apptype">Alternatives and augmentations for media or text</td>
         <td headers="th-datatype">Boolean</td>
@@ -245,7 +235,7 @@
           should be provided or turned on.
         </td>
       </tr>
-      <tr class="augmentations-media">
+      <tr class="augmentations-media cloud4all">
         <th headers="th-name" scope="row">signLanguage</th>
         <td headers="th-apptype">Alternatives and augmentations for media or text</td>
         <td headers="th-datatype">String</td>
@@ -262,7 +252,7 @@
           <code>ssp</code>: Spanish Sign Language.
         </td>
       </tr>
-      <tr class="augmentations-media">
+      <tr class="augmentations-media cloud4all">
         <th headers="th-name" scope="row">signLanguageInterpreterType</th>
         <td headers="th-apptype">Alternatives and augmentations for media or text</td>
         <td headers="th-datatype">String</td>
@@ -270,7 +260,7 @@
         <td headers="th-default">no default</td>
         <td headers="th-description">Determines whether (videos of) a human sign language interpreter or a sign language avatar should be used.</td>
       </tr>
-      <tr class="augmentations-media">
+      <tr class="augmentations-media cloud4all">
         <th headers="th-name" scope="row">pictogramsEnabled</th>
         <td headers="th-apptype">Alternatives and augmentations for media or text</td>
         <td headers="th-datatype">Boolean</td>
@@ -282,7 +272,7 @@
           <a href="https://en.wikipedia.org/wiki/Intellectual_disability">intellectual disability (<abbr>ID</abbr>)</a> (<abbr>USA</abbr>).
         </td>
       </tr>
-      <tr class="augmentations-media">
+      <tr class="augmentations-media cloud4all">
         <th headers="th-name" scope="row">pictogramsSymbolSet</th>
         <td headers="th-apptype">Alternatives and augmentations for media or text</td>
         <td headers="th-datatype">String</td>
@@ -294,7 +284,7 @@
         </td>
       </tr>
 
-      <tr class="cognitive">
+      <tr class="cognitive cloud4all">
         <th headers="th-name" scope="row">simplifiedUiEnabled</th>
         <td headers="th-apptype">Cognitive support</td>
         <td headers="th-datatype">Boolean</td>
@@ -306,7 +296,139 @@
         </td>
       </tr>
 
-      <tr class="selfvoicing">
+      <tr class="input cloud4all">
+        <th headers="th-name" scope="row">onScreenKeyboardEnabled</th>
+        <td headers="th-apptype">Input</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determines whether the on-screen keyboard should be activated.
+          This is mainly for operating systems and applications that don't automatically activate an on-screen keyboard
+          when text input is required.
+        </td>
+      </tr>
+      <tr class="input gpii-eu">
+        <th headers="th-name" scope="row">voiceControlEnabled</th>
+        <td headers="th-apptype">Input</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determines whether speech recognition for input (including access to user interface elements) should be enabled.</td>
+      </tr>
+
+      <tr class="textformatting cloud4all">
+        <th headers="th-name" scope="row">fontSize</th>
+        <td headers="th-apptype">Text formatting</td>
+        <td headers="th-datatype">Float</td>
+        <td headers="th-valuerange">0.1 .. * (in points)</td>
+        <td headers="th-default">12</td>
+        <td headers="th-description">Font size in points.
+          Note that <abbr>CSS</abbr> can describe
+          <a href="https://www.w3.org/TR/CSS21/fonts.html#propdef-font-size"><code>font-size</code></a> 
+          using various types of values. See also, for example,
+          <a href="http://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/"><abbr>CSS</abbr> Font-Size: em vs. px vs. pt vs. percent</a>.
+        </td>
+      </tr>
+      <tr class="textformatting gpii-eu">
+        <th headers="th-name" scope="row">lineHeight</th>
+        <td headers="th-apptype">Text formatting</td>
+        <td headers="th-datatype">(String)</td>
+        <td headers="th-valuerange">See the values for 
+          <a href="https://www.w3.org/TR/CSS21/visudet.html#propdef-line-height"><code>line-height</code> in <abbr>CSS</abbr> 2.1</a>.
+        </td>
+        <td headers="th-default"><code>normal</code> (the default value in <abbr>CSS</abbr> 2.1)</td>
+        <td headers="th-description">See <a href="https://www.w3.org/TR/CSS21/visudet.html#propdef-line-height"><code>line-height</code> in <abbr>CSS</abbr> 2.1</a>.
+          Note: <abbr>CSS</abbr> 3 is still under development. The latest version of the <abbr>CSS</abbr> specification is the
+          <a href="https://www.w3.org/TR/css-2017/"><abbr>CSS</abbr> Snapshot 2017</a>.
+        </td>
+      </tr>
+      <tr class="textformatting gpii-eu">
+        <th headers="th-name" scope="row">foregroundColour</th>
+        <td headers="th-apptype">Text formatting</td>
+        <td headers="th-datatype">(String)</td>
+        <td headers="th-valuerange">See the values for
+          <a href="https://www.w3.org/TR/css3-color/#colorunits" lang="en-US">color units in <abbr>CSS</abbr> 3</a>.
+        </td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description">Determines the text colour.</td>
+      </tr>
+      <tr class="textformatting gpii-eu">
+        <th headers="th-name" scope="row">backgroundColour</th>
+        <td headers="th-apptype">Text formatting</td>
+        <td headers="th-datatype">(String)</td>
+        <td headers="th-valuerange">See the values for
+          <a href="https://www.w3.org/TR/css3-color/#colorunits" lang="en-US">color units in <abbr>CSS</abbr> 3</a>.
+        </td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description">Determines the background colour.</td>
+      </tr>
+      <tr class="textformatting gpii-eu">
+        <th headers="th-name" scope="row">unvisitedLinkColour</th>
+        <td headers="th-apptype">Text formatting</td>
+        <td headers="th-datatype">(String)</td>
+        <td headers="th-valuerange">See the values for
+          <a href="https://www.w3.org/TR/css3-color/#colorunits" lang="en-US">color units in <abbr>CSS</abbr> 3</a>.
+        </td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description">Determines the colour of unvisited links.</td>
+      </tr>
+      <tr class="textformatting gpii-eu">
+        <th headers="th-name" scope="row">visitedLinkColour</th>
+        <td headers="th-apptype">Text formatting</td>
+        <td headers="th-datatype">(String)</td>
+        <td headers="th-valuerange">See the values for
+          <a href="https://www.w3.org/TR/css3-color/#colorunits" lang="en-US">color units in <abbr>CSS</abbr> 3</a>.
+        </td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description">Determines the colour of visited links.</td>
+      </tr>
+      <tr class="textformatting gpii-eu">
+        <th headers="th-name" scope="row">focusedLinkColour</th>
+        <td headers="th-apptype">Text formatting</td>
+        <td headers="th-datatype">(String)</td>
+        <td headers="th-valuerange">See the values for
+          <a href="https://www.w3.org/TR/css3-color/#colorunits" lang="en-US">color units in <abbr>CSS</abbr> 3</a>.
+        </td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description">Determines the colour of links when they receive focus.</td>
+      </tr>
+      <!-- 
+      <tr class="textformatting gpii-eu">
+        <th headers="th-name" scope="row"></th>
+        <td headers="th-apptype">Text formatting</td>
+        <td headers="th-datatype"></td>
+        <td headers="th-valuerange"></td>
+        <td headers="th-default"></td>
+        <td headers="th-description"></td>
+      </tr>
+      -->
+
+      <tr class="timeouts gpii-eu">
+        <th headers="th-name" scope="row">sessionTimeout</th>
+        <td headers="th-apptype">Timeouts</td>
+        <td headers="th-datatype">Integer</td>
+        <td headers="th-valuerange">1 .. * (in seconds)</td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description"></td>
+      </tr>
+      <tr class="timeouts gpii-eu">
+        <th headers="th-name" scope="row">screenLockTimeout</th>
+        <td headers="th-apptype">Timeouts</td>
+        <td headers="th-datatype">Integer</td>
+        <td headers="th-valuerange">1 .. * (in seconds)</td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description"></td>
+      </tr>
+      <tr class="timeouts gpii-eu">
+        <th headers="th-name" scope="row">screenDimTimeout</th>
+        <td headers="th-apptype">Timeouts</td>
+        <td headers="th-datatype">Integer</td>
+        <td headers="th-valuerange">1 .. * (in seconds)</td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description"></td>
+      </tr>
+
+      <tr class="selfvoicing cloud4all">
         <th headers="th-name" scope="row">selfVoicingEnabled</th>
         <td headers="th-apptype">Self-voicing applications</td>
         <td headers="th-datatype">Boolean</td>
@@ -315,7 +437,7 @@
         <td headers="th-description">Determines whether an application's self-voicing feature should be enabled.</td>
       </tr>
 
-      <tr class="general">
+      <tr class="general cloud4all">
         <th headers="th-name" scope="row">language</th>
         <td headers="th-apptype">General settings</td>
         <td headers="th-datatype">String</td>
@@ -324,7 +446,7 @@
         <td headers="th-description">The language of the application's user interface or the content.</td>
       </tr>
 
-      <tr class="screenreader">
+      <tr class="screenreader cloud4all">
         <th headers="th-name" scope="row">speechRate</th>
         <td headers="th-apptype">Screen reader</td>
         <td headers="th-datatype">Integer</td>
@@ -335,7 +457,7 @@
           Note that some screen readers expect an integer and some versions crashed when give a floating point value.
         </td>
       </tr>
-      <tr class="screenreader">
+      <tr class="screenreader cloud4all">
         <th headers="th-name" scope="row">trackingTTS</th>
         <td headers="th-apptype">Screen reader</td>
         <td headers="th-datatype">array of Strings</td>
@@ -347,7 +469,7 @@
           <code>focus</code>: follow keyboard focus.
           These values can be combined.
       </tr>
-      <tr class="screenreader">
+      <tr class="screenreader cloud4all">
         <th headers="th-name" scope="row">speakTutorialMessages</th>
         <td headers="th-apptype">Screen reader</td>
         <td headers="th-datatype">Boolean</td>
@@ -359,7 +481,7 @@
           Note: Not to be confused with reporting tooltips or object descriptions.
         </td>
       </tr>
-      <tr class="screenreader">
+      <tr class="screenreader cloud4all">
         <th headers="th-name" scope="row">keyEcho</th>
         <td headers="th-apptype">Screen reader</td>
         <td headers="th-datatype">Boolean</td>
@@ -367,7 +489,7 @@
         <td headers="th-default">true</td>
         <td headers="th-description">Determines whether the screen reader should speak or &ldquo;echo&rdquo; each character typed by the user.</td>
       </tr>
-      <tr class="screenreader">
+      <tr class="screenreader cloud4all">
         <th headers="th-name" scope="row">wordEcho</th>
         <td headers="th-apptype">Screen reader</td>
         <td headers="th-datatype">Boolean</td>
@@ -377,7 +499,7 @@
           <code>wordEcho</code> and <code>keyEcho</code> are not mutually exclusive.
         </td>
       </tr>
-      <tr class="screenreader">
+      <tr class="screenreader cloud4all">
         <th headers="th-name" scope="row">announceCapitals</th>
         <td headers="th-apptype">Screen reader</td>
         <td headers="th-datatype">Boolean</td>
@@ -387,7 +509,7 @@
           For example, <abbr>NVDA</abbr> can be set to say &ldquo;cap&rdquo; for capitals.
         </td>
       </tr>
-      <tr class="screenreader">
+      <tr class="screenreader cloud4all">
         <th headers="th-name" scope="row">screenReaderBrailleOutput</th>
         <td headers="th-apptype">Screen reader</td>
         <td headers="th-datatype">Boolean</td>
@@ -397,7 +519,7 @@
           <code>screenReaderBrailleOutput</code> is not mutually exclusive with <code>screenReaderTTSEnabled</code>.
         </td>
       </tr>
-      <tr class="screenreader">
+      <tr class="screenreader cloud4all">
         <th headers="th-name" scope="row">punctuationVerbosity</th>
         <td headers="th-apptype">Screen reader</td>
         <td headers="th-datatype">String</td>
@@ -410,7 +532,7 @@
           <code>all</code>: all punctuation marks are read aloud.
         </td>
       </tr>
-      <tr class="screenreader">
+      <tr class="screenreader cloud4all">
         <th headers="th-name" scope="row">readingUnit</th>
         <td headers="th-apptype">Screen reader</td>
         <td headers="th-datatype">String</td>
@@ -418,7 +540,7 @@
         <td headers="th-default">sentence</td>
         <td headers="th-description"><!--@@add description--></td>
       </tr>
-      <tr class="screenreader">
+      <tr class="screenreader cloud4all">
         <th headers="th-name" scope="row">auditoryOutLanguage</th>
         <td headers="th-apptype">Screen reader</td>
         <td headers="th-datatype">String</td>
@@ -426,7 +548,7 @@
         <td headers="th-default">no default</td>
         <td headers="th-description">Determines the text-to-speech language used by the screen reader. (This should not prevent live switching to other languages based on language switches identified inside documents.)</td>
       </tr>
-      <tr class="screenreader">
+      <tr class="screenreader cloud4all">
         <th headers="th-name" scope="row">screenReaderTTSEnabled</th>
         <td headers="th-apptype">Screen reader</td>
         <td headers="th-datatype">Boolean</td>
@@ -436,7 +558,7 @@
           <code>screenReaderTTSEnabled</code> is not mutually exclusive with <code>screenReaderBrailleOutput</code>.
         </td>
       </tr>
-      <tr class="screenreader">
+      <tr class="screenreader cloud4all">
         <th headers="th-name" scope="row">pitch</th>
         <td headers="th-apptype">Screen reader</td>
         <td headers="th-datatype">Float</td>
@@ -444,7 +566,7 @@
         <td headers="th-default">0.5</td>
         <td headers="th-description">Determines the pitch for the screen reader's synthetic speech.</td>
       </tr>
-      <tr class="screenreader">
+      <tr class="screenreader cloud4all">
         <th headers="th-name" scope="row">volumeTTS</th>
         <td headers="th-apptype">Screen reader</td>
         <td headers="th-datatype">Float</td>
@@ -452,20 +574,8 @@
         <td headers="th-default">no default</td>
         <td headers="th-description">Determines the volume for the screen reader's synthetic speech.</td>
       </tr>
-
-      <tr class="keyboardaccess">
-        <th headers="th-name" scope="row">onScreenKeyboardEnabled</th>
-        <td headers="th-apptype">Keyboard access</td>
-        <td headers="th-datatype">Boolean</td>
-        <td headers="th-valuerange">true&nbsp;/ false</td>
-        <td headers="th-default">false</td>
-        <td headers="th-description">Determines whether the on-screen keyboard should be activated.
-          This is mainly for operating systems and applications that don't automatically activate an on-screen keyboard
-          when text input is required.
-        </td>
-      </tr>
       <!-- 
-      <tr>
+      <tr class="">
         <th headers="th-name" scope="row"></th>
         <td headers="th-apptype"></td>
         <td headers="th-datatype"></td>
