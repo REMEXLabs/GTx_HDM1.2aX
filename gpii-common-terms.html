@@ -362,9 +362,10 @@
         <td headers="th-default">no default</td>
         <td headers="th-description">Determines the background colour.</td>
       </tr>
-      <tr class="textformatting gpii-eu">
+
+      <tr class="navigation gpii-eu">
         <th headers="th-name" scope="row">unvisitedLinkColour</th>
-        <td headers="th-apptype">Text formatting</td>
+        <td headers="th-apptype">Navigation</td>
         <td headers="th-datatype">(String)</td>
         <td headers="th-valuerange">See the values for
           <a href="https://www.w3.org/TR/css3-color/#colorunits" lang="en-US">color units in <abbr>CSS</abbr> 3</a>.
@@ -372,9 +373,9 @@
         <td headers="th-default">no default</td>
         <td headers="th-description">Determines the colour of unvisited links.</td>
       </tr>
-      <tr class="textformatting gpii-eu">
+      <tr class="navigation gpii-eu">
         <th headers="th-name" scope="row">visitedLinkColour</th>
-        <td headers="th-apptype">Text formatting</td>
+        <td headers="th-apptype">Navigation</td>
         <td headers="th-datatype">(String)</td>
         <td headers="th-valuerange">See the values for
           <a href="https://www.w3.org/TR/css3-color/#colorunits" lang="en-US">color units in <abbr>CSS</abbr> 3</a>.
@@ -382,26 +383,34 @@
         <td headers="th-default">no default</td>
         <td headers="th-description">Determines the colour of visited links.</td>
       </tr>
-      <tr class="textformatting gpii-eu">
+      <tr class="navigation gpii-eu">
         <th headers="th-name" scope="row">focusedLinkColour</th>
-        <td headers="th-apptype">Text formatting</td>
+        <td headers="th-apptype">Navigation</td>
         <td headers="th-datatype">(String)</td>
         <td headers="th-valuerange">See the values for
           <a href="https://www.w3.org/TR/css3-color/#colorunits" lang="en-US">color units in <abbr>CSS</abbr> 3</a>.
         </td>
         <td headers="th-default">no default</td>
-        <td headers="th-description">Determines the colour of links when they receive focus.</td>
+        <td headers="th-description">Determines the colour of links when they receive focus.
+          Note: In <abbr>CSS</abbr> 3, this corresponds with <a href="https://www.w3.org/TR/css3-selectors/#the-user-action-pseudo-classes-hover-act"><code>:focu</code></a>.
+        </td>
       </tr>
-      <!-- 
-      <tr class="textformatting gpii-eu">
-        <th headers="th-name" scope="row"></th>
-        <td headers="th-apptype">Text formatting</td>
-        <td headers="th-datatype"></td>
-        <td headers="th-valuerange"></td>
-        <td headers="th-default"></td>
-        <td headers="th-description"></td>
+      <tr class="navigation gpii-eu">
+        <th headers="th-name" scope="row">displaySkiplinks</th>
+        <td headers="th-apptype">Navigation</td>
+        <td headers="th-datatype">String</td>
+        <td headers="th-valuerange">one of: always, onfocus, never</td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description">Determines the visibility of skiplinks: always visible, only on keyboard focus, or never.</td>
       </tr>
-      -->
+      <tr class="navigation gpii-eu">
+        <th headers="th-name" scope="row">tableOfContents</th>
+        <td headers="th-apptype">Navigation</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determines whether a table of contents should be displayed, possibly generated from the heading structure in the document.</td>
+      </tr>
 
       <tr class="timeouts gpii-eu">
         <th headers="th-name" scope="row">sessionTimeout</th>
