@@ -1,0 +1,32 @@
+/* low contrast: brown on buff */
+/* See http://gpii.eu/moocap/?page_id=58. However, brown #804000 on sepia #704214 is unreadable, hence brown on buff #F0DC82; contrast = 5.76:1 */ 
+@import url("gtx_hdm12ax_layout.css");
+
+body {
+  color: #804000;
+  background-color: #F0DC82;
+}
+
+a:link, a:visited, a:hover, a:focus, a:active {
+  color: #804000;
+  background-color: transparent;
+}
+nav ul li a:link, nav ul li a:visited, nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
+  color: #804000;
+  background-color: transparent;
+}
+a.skiplink {
+  background: #F0DC82;
+  color: #F0DC82;
+}
+a.skiplink:hover, a.skiplink:focus, a.skiplink:active {
+  background: transparent;
+  color: #804000;
+}
+footer {
+  border-top-color: #F0DC82;
+}
+footer p#licence {
+  border-top: 2px solid #804000;
+  padding-top: 5px;
+}
