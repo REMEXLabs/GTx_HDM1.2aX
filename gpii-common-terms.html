@@ -12,7 +12,7 @@
   <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/systemcolours.css" title="System colours" id="rel-css-system-colours" />
   <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/nocolours.css" title="&lsquo;No colours&rsquo;" id="rel-css-no-colours" />
   <script src="js/sorttable.js" type="text/javascript"></script>
-  <style type="text/css"> tr.screenreader { display: none; }
+  <style type="text/css"> tr.hidden { display: none; }
   </style>
   <meta name="robots" content="noindex, nofollow" />
   <meta name="googlebot" content="noindex, nofollow" />
@@ -292,7 +292,7 @@
         <td headers="th-valuerange">true&nbsp;/ false</td>
         <td headers="th-default">false</td>
         <td headers="th-description">Determines whether the application should provide a simplified user inteface,
-          especially for people wit a general learning disability (<abbr>UK</abbr>)&nbsp;/ 
+          especially for people with a general learning disability (<abbr>UK</abbr>)&nbsp;/ 
           intellectual disability (<abbr>ID</abbr>) (<abbr>USA</abbr>).
         </td>
       </tr>
@@ -583,6 +583,76 @@
         <td headers="th-valuerange">0.0 .. 1.0</td>
         <td headers="th-default">no default</td>
         <td headers="th-description">Determines the volume for the screen reader's synthetic speech.</td>
+      </tr>
+
+      <tr class="touchscreen cloud4all hidden">
+        <th headers="th-name" scope="row">hapticFeedback</th>
+        <td headers="th-apptype">Touch screen (mobile device)</td>
+        <td headers="th-datatype">String</td>
+        <td headers="th-valuerange">none&nbsp;/ always</td>
+        <td headers="th-default">none</td>
+        <td headers="th-description">Enables vibration. (Note: iOS 7 supports at least 3 options: silent mode, vibrate mode and vibrate on particular interactions.)</td>
+      </tr>
+      <tr class="touchscreen cloud4all">
+        <th headers="th-name" scope="row">screenOffTime</th>
+        <td headers="th-apptype">Touch screen (mobile device)</td>
+        <td headers="th-datatype">Integer</td>
+        <td headers="th-valuerange">0 .. * (seconds)</td>
+        <td headers="th-default">30</td>
+        <td headers="th-description">The time in seconds before the screen is dimmed.</td>
+      </tr>
+      <tr class="touchscreen gpii-eu">
+        <th headers="th-name" scope="row">screenDimEnabled</th>
+        <td headers="th-apptype">Touch screen (mobile device)</td><!-- cloud4all name: screenDim -->
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">true</td>
+        <td headers="th-description"></td>
+      </tr>
+      <tr class="touchscreen gpii-eu">
+        <th headers="th-name" scope="row">screenRotationEnabled</th><!-- cloud4all name: screenRotation -->
+        <td headers="th-apptype">Touch screen (mobile device)</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">true</td>
+        <td headers="th-description"></td>
+      </tr>
+      <tr class="touchscreen cloud4all">
+        <th headers="th-name" scope="row">screenDefaultRotation</th>
+        <td headers="th-apptype">Touch screen (mobile device)</td>
+        <td headers="th-datatype">Integer</td>
+        <td headers="th-valuerange">0, 1, 2, 3</td>
+        <td headers="th-default">1</td>
+        <td headers="th-description">The numbers map to the following rotations:
+          <code>0</code> = 0°;
+          <code>1</code> = 90°;
+          <code>2</code> = 180°;
+          <code>3</code> = 270°;
+        </td>
+      </tr>
+      <tr class="touchscreen cloud4all">
+        <th headers="th-name" scope="row">screenLockTimeout</th>
+        <td headers="th-apptype">Touch screen (mobile device)</td>
+        <td headers="th-datatype">Integer</td>
+        <td headers="th-valuerange">1 .. * (seconds)</td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description"></td>
+      </tr>
+      <tr class="touchscreen cloud4all">
+        <th headers="th-name" scope="row">screenDimTimeout</th>
+        <td headers="th-apptype">Touch screen (mobile device)</td>
+        <td headers="th-datatype">Integer</td>
+        <td headers="th-valuerange">1 .. * (seconds)</td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description"></td>
+      </tr>
+      <tr class="touchscreen cloud4all">
+        <th headers="th-name" scope="row">alertsEnabled</th>
+        <td headers="th-apptype">Touch screen (mobile device)</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">no default</td>
+        <td headers="th-description"></td>
       </tr>
       <!-- 
       <tr class="">
