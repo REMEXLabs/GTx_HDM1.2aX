@@ -1,0 +1,8 @@
+{
+    "format": "JSON (JavaScript Object Notation)",
+    "file name": "testjson.json",
+    "purpose": "testing XHR / CORS",
+    "repository": "GTx_HDM1.2aX",
+    "copyright": "Hochschule der Medien",
+    "licence": "Apache 2.0"
+}
