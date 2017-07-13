@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Test Page | GTx HDM1.2aX</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/gtx_hdm12ax.css" title="Default style" id="rel-css-default" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/black-on-white.css" title="Black on white (high contrast)" id="rel-css-black-on-white" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/white-on-black.css" title="White on black (high contrast)" id="rel-css-white-on-black" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/yellow-on-black.css" title="Yellow on black (high contrast)" id="rel-css-yellow-on-black" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/lime-on-black.css" title="Lime on black (high contrast)" id="rel-css-lime-on-black" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/brown-on-buff.css" title="Brown on buff (low contrast)" id="rel-css-brown-on-buff" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/systemcolours.css" title="System colours" id="rel-css-system-colours" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/nocolours.css" title="&lsquo;No colours&rsquo;" id="rel-css-no-colours" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="author" content="Christophe Strobbe" />
+</head>
+
+<body>
+  <header>
+    <h1><span class="h1txt">Test Page</span></h1>
+    <p class="skiplink"><a class="skiplink" href="#main">Skip to main content</a></p>
+  </header>
+
+  <nav>
+    <h2>Site Navigation</h2>
+    <ul>
+      <li><a href="index.html" rel="home">Home</a></li>
+      <li><a href="accessibility-usability.html">Accessibility and Usability</a></li>
+      <li><a href="browser-features.html">Browser Features</a></li>
+      <li><a href="gpii-common-terms.html"><abbr>GPII</abbr> Common Terms</a></li>
+      <li><a href="glossary.html" rel="glossary"><abbr>ICT</abbr> Accessibility Glossary</a></li>
+      <li><a href="links.html">Links</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <div>
+      <p>Test page for scripts.</p>
+      <p class="temp"><button id="getJSON">get JSON</button></p>
+      <p class="temp" id="content"></p>
+    </div>
+    <section>
+      <h2>Definition List</h2>
+      <dl>
+        <dt>First term</dt>
+          <dd>First definition</dd>
+        <dt>Second term</dt>
+          <dd>Second definition</dd>
+        <dt>Third term</dt>
+          <dd>Third definition</dd>
+        <dt>Fourth term</dt>
+          <dd>Fourth definition</dd>
+      </dl>
+    </section>
+    <section>
+      <h2>Data Table</h2>
+      <table>
+        <caption>Table caption</caption>
+        <thead>
+          <tr>
+            <th scope="col" id="th-1">Column header 1</th>
+            <th scope="col" id="th-2">Column header 2</th>
+            <th scope="col" id="th-3">Column header 3</th>
+            <th scope="col" id="th-4">Column header 4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td headers="th-1">Table cell 1.1</td>
+            <td headers="th-2">Table cell 1.2</td>
+            <td headers="th-3">Table cell 1.3</td>
+            <td headers="th-4">Table cell 1.4</td>
+          </tr>
+          <tr>
+            <td headers="th-1">Table cell 2.1</td>
+            <td headers="th-2">Table cell 2.2</td>
+            <td headers="th-3">Table cell 2.3</td>
+            <td headers="th-4">Table cell 2.4</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Example Form</h2>
+      <form accept-charset="UTF-8" action="testpage.html" autocomplete="off" enctype="text/plain" method="post" name="testform" id="testform">
+        <fieldset>
+          <legend>Your details</legend>
+          <p><label for="name" class="forinput">Name:&nbsp;</label> <input id="name" name="name" type="text" minlength="2" maxlength="100" size="40" /><span class="input-validation"></span></p>
+          <p><label for="mail" class="forinput">E-mail (required):&nbsp;</label> <input id="mail" name="mail" type="email" minlength="6" maxlength="100" size="40" required="required" /><span class="input-validation"></span></p>
+          <p><label for="phon" class="forinput">Phone:&nbsp;</label> <input id="phon" name="phon" type="tel" minlength="6" maxlength="50" size="40" /><span class="input-validation"></span></p>
+        </fieldset>
+      <div class="fieldset">
+        <p><label for="category" class="forselect">Select list:&nbsp;</label>
+          <select id="category" name="category">
+            <option value="cs">Customer service</option>
+            <option value="orders">Orders</option>
+            <option value="events">Event enquiries</option>
+            <option value="feedback">Website feedback</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+        <p><label for="datainput" class="forselect">Data list:&nbsp;</label>
+          <input id="datainput" name="datainput" list="datainput-other" type="text" />
+          <datalist id="datainput-other">
+            <option label="Mr" value="Mr"></option>
+            <option label="Ms" value="Ms"></option>
+            <option label="Khaleesi" value="Khaleesi"></option>
+            <option label="Bundeskanzlerin" value="Bundeskanzlerin"></option>
+          </datalist>
+        </p>
+        <fieldset>
+          <legend>Radio buttons</legend>
+          <input type="radio" name="radiobtns" id="radio01" value="radio-value01" />
+          <label for="radio01">radio-value01</label><br />
+          <input type="radio" name="radiobtns" id="radio02" value="radio-value02" />
+          <label for="radio02">radio-value02</label><br />
+          <input type="radio" name="radiobtns" id="radio03" value="radio-value03" />
+          <label for="radio03">radio-value03</label>
+        </fieldset>
+        <fieldset>
+          <legend>Checkboxes</legend>
+          <input type="checkbox" name="checkbxs" id="checkbx01" value="checkbox-value01" />
+          <label for="checkbx01">checkbox-value01</label><br />
+          <input type="checkbox" name="checkbxs" id="checkbx02" value="checkbox-value02" />
+          <label for="checkbx02">checkbox-value02</label><br />
+          <input type="checkbox" name="checkbxs" id="checkbx03" value="checkbox-value03" />
+          <label for="checkbx03">checkbox-value03</label>
+        </fieldset>
+        <p><label for="message" class="fortextarea">Textarea:&nbsp;</label>
+          <textarea cols="70" rows="10" id="message" name="message"></textarea>
+        </p>
+      </div>
+      <div class="fieldset buttons">
+        <p>
+          <button type="submit" id="contact-submit-button">Submit form</button>
+          <button type="reset" id="contact-clear-button">Clear form</button>
+        </p>
+      </div>
+
+      </form>
+    </section>
+
+    <!-- 
+    <div>
+      <iframe width="853" height="480" src="https://www.youtube.com/embed/ipKNMMeKhmI?rel=0" frameborder="0" allowfullscreen></iframe>
+      <p>Andre Meixner, Head of User Centered Test (Accessibility &amp; Usability) at T-Systems Multimedia Solutions <abbr>GmbH</abbr>,
+        explains why accessible software solutions are important in work places.
+        (Video licence: <abbr title="Creative Commons Attribution">CC-BY</abbr> 4.0; copyright: <span lang="de">Technische Universität Dresden</span>, 2016.)
+      </p>
+    </div>
+    -->
+  </main>
+
+  <footer>
+    <p id="licence">
+    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="./img/cc_by_4.0_88x31.png" /></a><br />
+    <strong>Example Site for GTx HDM1.2aX</strong> by <a href="https://github.com/REMEXLabs"><abbr>HdM</abbr> REMEXLabs</a> is licensed under a 
+    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    </p>
+    <p><a href="contact-form.html">Contact form</a> | <a href="publisherinfo.html">Publisher information / <span lang="de">Impressum</span></a> | <a href="https://github.com/REMEXLabs/GTx_HDM1.2aX">GitHub repository</a></p>
+  </footer>
+  <script src="js/gtxhdm.js" type="text/javascript"></script>
+</body>
+</html>
