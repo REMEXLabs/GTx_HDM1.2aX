@@ -35,11 +35,6 @@
   </nav>
 
   <main id="main">
-    <div>
-      <p>Test page for scripts.</p>
-      <p class="temp"><button id="getJSON">get JSON</button></p>
-      <p class="temp" id="content"></p>
-    </div>
     <section>
       <h2>Definition List</h2>
       <dl>
@@ -91,54 +86,85 @@
           <p><label for="mail" class="forinput">E-mail (required):&nbsp;</label> <input id="mail" name="mail" type="email" minlength="6" maxlength="100" size="40" required="required" /><span class="input-validation"></span></p>
           <p><label for="phon" class="forinput">Phone:&nbsp;</label> <input id="phon" name="phon" type="tel" minlength="6" maxlength="50" size="40" /><span class="input-validation"></span></p>
         </fieldset>
-      <div class="fieldset">
-        <p><label for="category" class="forselect">Select list:&nbsp;</label>
-          <select id="category" name="category">
-            <option value="cs">Customer service</option>
-            <option value="orders">Orders</option>
-            <option value="events">Event enquiries</option>
-            <option value="feedback">Website feedback</option>
-            <option value="other">Other</option>
-          </select>
-        </p>
-        <p><label for="datainput" class="forselect">Data list:&nbsp;</label>
-          <input id="datainput" name="datainput" list="datainput-other" type="text" />
-          <datalist id="datainput-other">
-            <option label="Mr" value="Mr"></option>
-            <option label="Ms" value="Ms"></option>
-            <option label="Khaleesi" value="Khaleesi"></option>
-            <option label="Bundeskanzlerin" value="Bundeskanzlerin"></option>
-          </datalist>
-        </p>
-        <fieldset>
-          <legend>Radio buttons</legend>
-          <input type="radio" name="radiobtns" id="radio01" value="radio-value01" />
-          <label for="radio01">radio-value01</label><br />
-          <input type="radio" name="radiobtns" id="radio02" value="radio-value02" />
-          <label for="radio02">radio-value02</label><br />
-          <input type="radio" name="radiobtns" id="radio03" value="radio-value03" />
-          <label for="radio03">radio-value03</label>
-        </fieldset>
-        <fieldset>
-          <legend>Checkboxes</legend>
-          <input type="checkbox" name="checkbxs" id="checkbx01" value="checkbox-value01" />
-          <label for="checkbx01">checkbox-value01</label><br />
-          <input type="checkbox" name="checkbxs" id="checkbx02" value="checkbox-value02" />
-          <label for="checkbx02">checkbox-value02</label><br />
-          <input type="checkbox" name="checkbxs" id="checkbx03" value="checkbox-value03" />
-          <label for="checkbx03">checkbox-value03</label>
-        </fieldset>
-        <p><label for="message" class="fortextarea">Textarea:&nbsp;</label>
-          <textarea cols="70" rows="10" id="message" name="message"></textarea>
-        </p>
-      </div>
-      <div class="fieldset buttons">
-        <p>
-          <button type="submit" id="contact-submit-button">Submit form</button>
-          <button type="reset" id="contact-clear-button">Clear form</button>
-        </p>
-      </div>
+        <div class="fieldset">
+          <p><label for="category" class="forselect">Select list:&nbsp;</label>
+            <select id="category" name="category">
+              <option value="cs">Customer service</option>
+              <option value="orders">Orders</option>
+              <option value="events">Event enquiries</option>
+              <option value="feedback">Website feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+        </div>
+        <div class="fieldset">
+          <p><label for="datainput" class="forselect">Data list:&nbsp;</label>
+            <input id="datainput" name="datainput" list="datainput-other" type="text" />
+            <datalist id="datainput-other">
+              <option label="Mr" value="Mr"></option>
+              <option label="Ms" value="Ms"></option>
+              <option label="Khaleesi" value="Khaleesi"></option>
+              <option label="Bundeskanzlerin" value="Bundeskanzlerin"></option>
+            </datalist>
+          </p>
+          </div>
+          <fieldset>
+            <legend>Radio buttons</legend>
+            <input type="radio" name="radiobtns" id="radio01" value="radio-value01" />
+            <label for="radio01">radio-value01</label><br />
+            <input type="radio" name="radiobtns" id="radio02" value="radio-value02" />
+            <label for="radio02">radio-value02</label><br />
+            <input type="radio" name="radiobtns" id="radio03" value="radio-value03" />
+            <label for="radio03">radio-value03</label>
+          </fieldset>
+          <fieldset>
+            <legend>Checkboxes</legend>
+            <input type="checkbox" name="checkbxs" id="checkbx01" value="checkbox-value01" />
+            <label for="checkbx01">checkbox-value01</label><br />
+            <input type="checkbox" name="checkbxs" id="checkbx02" value="checkbox-value02" />
+            <label for="checkbx02">checkbox-value02</label><br />
+            <input type="checkbox" name="checkbxs" id="checkbx03" value="checkbox-value03" />
+            <label for="checkbx03">checkbox-value03</label>
+          </fieldset>
+          <p><label for="message" class="fortextarea">Textarea:&nbsp;</label>
+            <textarea cols="70" rows="10" id="message" name="message"></textarea>
+          </p>
+        </div>
+        <div class="fieldset buttons">
+          <p>
+            <button type="submit" id="contact-submit-button">Submit form</button>
+            <button type="reset" id="contact-clear-button">Clear form</button>
+          </p>
+        </div>
+      </form>
+    </section>
+    <section>
+      <h2>JavaScript</h2>
+      <p>Test <abbr title="cross-origin resource sharing">CORS</abbr> script with simple <abbr title="JavaScript Object Notation">JSON</abbr> file.</p>
+      <p class="temp"><button id="getJSON">get JSON</button></p>
+      <p class="temp" id="content"></p>
 
+      <hr />
+
+      <form accept-charset="UTF-8" action="testpage.html" enctype="text/plain"  method="post" name="samplejsonform" id="samplejsonform">
+        <div class="fieldset">
+          <p><label for="npset" class="forselect">Preference set:&nbsp;</label>
+            <select id="npset" name="npset">
+              <option value="Anna-UK">Anna (<abbr>UK</abbr>)</option>
+              <option value="Lars-NO">Lars (Norway)</option>
+              <option value="Lars-US">Lars  (<abbr>USA</abbr>)</option>
+              <option value="Monika-DE">Monika (Germany)</option>
+              <option value="Susan-UK">Susan (<abbr>UK</abbr>)</option>
+              <option value="Tom-IE">Tome (Ireland)</option>
+            </select>
+          </p>
+        </div>
+        <div class="fieldset buttons">
+          <p>
+            <button type="submit" id="npset-submit-button">Fetch Preference set</button>
+            <button type="reset" id="npset-clear-button">Clear form</button>
+          </p>
+        </div>
       </form>
     </section>
 
