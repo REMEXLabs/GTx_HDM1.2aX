@@ -1,5 +1,7 @@
 
-var DEBUG = true;
+// See also https://stackoverflow.com/questions/2934509/exclude-debug-javascript-code-during-minification
+/** @define {boolean} - Global boolean variable to turn debugging code on or off. Should be 'false' for production code. '&& window.console' is added for browsers that don't have or expose a console. */
+var DEBUG = true && window.console;
 
 /* Modifications after checking Willison's original code with JSHint: added "use strict" and changed "window.onload != 'function'" into "window.onload !== 'function'".*/
 /**
@@ -103,7 +105,6 @@ function typeOfVar(variable) {
  * @namespace The main application object.
  */
 var gtxhdm = {
-    //prefsServerUrl: "http://localhost:8088/github/GTx_HDM12aX_preferences/",
     prefsServerUrl: "https://remexlabs.github.io/GTx_HDM12aX_preferences/",
 
     /**
@@ -115,10 +116,6 @@ var gtxhdm = {
     init:function() {
         "use strict";
         var getJSON;
-
-        loadScript("js/DOMhelp.js", function() { // Strictly speaking, it is better to load from a CDN instead of a relative path.
-            if (DEBUG) { console.info("DOMhelp.js loaded."); }
-        });
 
         getJSON = document.getElementById("getJSON");
         this.addJsonButtonListener();
@@ -164,14 +161,14 @@ var gtxhdm = {
 
         xhr = new XMLHttpRequest();
         if ("withCredentials" in xhr) {
-            if (DEBUG) {console.info("XHR with credentials / XMLHTTPRequest2 object.");}
+            if (DEBUG) { console.info("XHR with credentials / XMLHTTPRequest2 object."); }
             xhr.open(method, url, true);
         } else if (typeof XDomainRequest != "undefined") {
-            if (DEBUG) {console.info("XHR with XDomainRequest, i.e. Internet Explorer 8 / 9.");}
+            if (DEBUG) { console.info("XHR with XDomainRequest, i.e. Internet Explorer 8 / 9."); }
             xhr = new XDomainRequest();
             xhr.open(method, url);
         } else {
-            console.warn("CORS not supported. xhr = null!");
+            if (DEBUG) { console.error("CORS not supported. xhr = null!"); }
             xhr = null;
         }
         return xhr;
@@ -195,7 +192,7 @@ var gtxhdm = {
                 content.innerHTML += prop + ": " + data[prop] + '<br />';
             }
         } else {
-            console.warn("Container element not found in the document!");
+            if (DEBUG)  {console.error("Container element not found in the document!"); }
         }
         if (DEBUG) { console.info("Stringified JSON: \n" + JSON.stringify(data, null, " ")); }
     },
@@ -212,12 +209,12 @@ var gtxhdm = {
         var	reply = "",
             xhr;
 
-        if (DEBUG) { console.log("getJsonRequest called."); }
+        if (DEBUG) { console.info("getJsonRequest called."); }
 
         xhr = gtxhdm.createCorsRequest('GET', url);
 
         if (!xhr) {
-            console.warn("CORS not supported!");
+            if (DEBUG) { console.error("CORS not supported!"); }
             return;
         }
         xhr.onload = function() {
@@ -225,7 +222,7 @@ var gtxhdm = {
             callback(reply);
         };
         xhr.onerror = function() {
-            console.warn("CORS request caused error.");
+            if (DEBUG) { console.error("CORS request caused error."); }
         };
 
         xhr.send();
@@ -259,11 +256,11 @@ var gtxhdm = {
 
         npSetName = document.getElementById("npset").value;
         jsonurl = gtxhdm.prefsServerUrl + npMapping[npSetName];
-        if (DEBUG) { console.log("samplejsonform submitted: " + npSetName + ". JSON URL: " + jsonurl);}
+        if (DEBUG) { console.info("samplejsonform submitted: " + npSetName + ". JSON URL: " + jsonurl); }
 
         gtxhdm.getJsonRequest(jsonurl, function(fullNpSet) {
             prefs = fullNpSet["flat"]["contexts"]["gpii-default"]["preferences"];
-            if (DEBUG) { console.log("The prefs (stringified): " + JSON.stringify(prefs, null, " "));}
+            if (DEBUG) { console.log("The prefs (stringified): " + JSON.stringify(prefs, null, " ")); }
             gtxhdm.displayJsonData(prefs, "npSetContainer");
         });
     },
