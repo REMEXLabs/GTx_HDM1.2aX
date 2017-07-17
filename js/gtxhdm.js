@@ -104,7 +104,7 @@ function typeOfVar(variable) {
  */
 var gtxhdm = {
     //prefsServerUrl: "http://localhost:8088/github/GTx_HDM12aX_preferences/",
-    prefsServerUrl: "https://remexlabs.github.io/GTx_HDM12aX_preferences/";
+    prefsServerUrl: "https://remexlabs.github.io/GTx_HDM12aX_preferences/",
 
     /**
      * Initialise the application, but only in browsers that support
@@ -140,7 +140,7 @@ var gtxhdm = {
 
 
     /**
-     * Add a listener for showing JSON test data.
+     * Add a listener to the form with the ID 'samplejsonform'.
      * @author Christophe Strobbe (HdM)
      */
     addJsonFormListenr: function() {
@@ -245,6 +245,7 @@ var gtxhdm = {
             fullNpSet,
             prefs;
 
+        /** Maps the form submission value to a JSON file. */
         npMapping = {
             "Anna-UK"      : "Anna-UK.json",
             "Lars-NO"      : "Lars-NO.json",
@@ -258,18 +259,18 @@ var gtxhdm = {
 
         npSetName = document.getElementById("npset").value;
         jsonurl = gtxhdm.prefsServerUrl + npMapping[npSetName];
-        if (DEBUG) { console.log("samplejsonform submitted: " + npSetName + ". JSON URL: " + jsonurl);};
+        if (DEBUG) { console.log("samplejsonform submitted: " + npSetName + ". JSON URL: " + jsonurl);}
 
         gtxhdm.getJsonRequest(jsonurl, function(fullNpSet) {
             prefs = fullNpSet["flat"]["contexts"]["gpii-default"]["preferences"];
-            if (DEBUG) { console.log("The prefs (stringified): " + JSON.stringify(prefs, null, " ")); };
+            if (DEBUG) { console.log("The prefs (stringified): " + JSON.stringify(prefs, null, " "));}
             gtxhdm.displayJsonData(prefs, "npSetContainer");
         });
     },
 
 
     /**
-     * Retrieves a sample JSON file. For demonstration/test purposes only.
+     * Retrieve a sample JSON file. For demonstration/test purposes only.
      * @author Christophe Strobbe (HdM)
      */
     getTestJson: function() {
