@@ -50,7 +50,7 @@
     The expanded name of a term includes the namespace, for example
     <code class="gpii-eu-term">http://registry.gpii.eu/common/highContrastEnabled</code>.
     <br />(People who are familiar with <abbr>GPII</abbr> or the <abbr>EU</abbr>-funded project
-    Cloud4all should be aware that the namespace differs from the &lquo;official&rdquo; namespace
+    Cloud4all should be aware that the namespace differs from the “official” namespace
     <code>http://registry.gpii.<strong>net</strong>/common</code>.)
   </p>
   <p>Default values are purely informative since it would be inappropriate for <abbr>GPII</abbr> to tell
@@ -205,8 +205,8 @@
         <td headers="th-datatype">Boolean</td>
         <td headers="th-valuerange">true&nbsp;/ false</td>
         <td headers="th-default">false</td>
-        <td headers="th-description">Determines whether capions (or &ldquo;subtitles for the Deaf or hard of hearing&rdquo; should be turned on.
-          Captions should not be confused with &ldquo;normal&rdquo; subtitles, which merely translate the spoken content of a video.
+        <td headers="th-description">Determines whether capions (or “subtitles for the Deaf or hard of hearing” should be turned on.
+          Captions should not be confused with “normal” subtitles, which merely translate the spoken content of a video.
           Captions also describe important non-speech sounds.
         </td>
       </tr>
@@ -491,7 +491,7 @@
         <td headers="th-default">false</td>
         <td headers="th-description">Determines whether the screen reader should read as object in the interface received focus,
           for example, how to interact with the currently focused object.
-          <br />This common term is based on &ldquo;Enable Tutorial Messages&rdquo; in Orca.
+          <br />This common term is based on “Enable Tutorial Messages” in Orca.
           Note: Not to be confused with reporting tooltips or object descriptions.
         </td>
       </tr>
@@ -501,7 +501,7 @@
         <td headers="th-datatype">Boolean</td>
         <td headers="th-valuerange">true&nbsp;/ false</td>
         <td headers="th-default">true</td>
-        <td headers="th-description">Determines whether the screen reader should speak or &ldquo;echo&rdquo; each character typed by the user.</td>
+        <td headers="th-description">Determines whether the screen reader should speak or “echo” each character typed by the user.</td>
       </tr>
       <tr class="screenreader cloud4all">
         <th headers="th-name" scope="row">wordEcho</th>
@@ -509,7 +509,7 @@
         <td headers="th-datatype">Boolean</td>
         <td headers="th-valuerange">true&nbsp;/ false</td>
         <td headers="th-default">false</td>
-        <td headers="th-description">Determines whether the screen reader should speak or &ldquo;echo&rdquo; each word typed by the user.
+        <td headers="th-description">Determines whether the screen reader should speak or “echo” each word typed by the user.
           <code>wordEcho</code> and <code>keyEcho</code> are not mutually exclusive.
         </td>
       </tr>
@@ -520,7 +520,7 @@
         <td headers="th-valuerange">true&nbsp;/ false</td>
         <td headers="th-default">false</td>
         <td headers="th-description">Determines whether the screen reader should in some way announce that a letter is a capital.
-          For example, <abbr>NVDA</abbr> can be set to say &ldquo;cap&rdquo; for capitals.
+          For example, <abbr>NVDA</abbr> can be set to say “cap” for capitals.
         </td>
       </tr>
       <tr class="screenreader cloud4all">
@@ -681,6 +681,18 @@
       </tr>
     </tfoot>
   </table>
+
+  <p>Notes related to implementation in <abbr>JSON</abbr>:</p>
+  <ul>
+    <li>In <abbr>JSON</abbr> format, an array of string would be represented like the following example:
+      <code>["caret", "mouse", "focus"]</code>.
+    </li>
+    <li><a href="https://spacetelescope.github.io/understanding-json-schema/"><abbr>JSON</abbr> Schema</a>
+      does not distinguish between “Integer” and “Float” but between
+      “integer” and “number”.
+    </li>
+  </ul>
+
   </main>
 
   <footer>
