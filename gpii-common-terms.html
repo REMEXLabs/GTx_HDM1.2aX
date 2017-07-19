@@ -12,7 +12,7 @@
   <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/systemcolours.css" title="System colours" id="rel-css-system-colours" />
   <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/nocolours.css" title="&lsquo;No colours&rsquo;" id="rel-css-no-colours" />
   <script src="js/sorttable.js" type="text/javascript"></script>
-  <style type="text/css"> tr.hidden { display: none; }
+  <style type="text/css"> .hidden, tr.inputui { display: none; }
   </style>
   <meta name="robots" content="noindex, nofollow" />
   <meta name="googlebot" content="noindex, nofollow" />
@@ -417,6 +417,29 @@
         <td headers="th-description">Determines whether a table of contents should be displayed, possibly generated from the heading structure in the document.</td>
       </tr>
 
+      <tr class="inputui gpii-eu">
+        <th headers="th-name" scope="row">autoTabbingEnabled</th>
+        <td headers="th-apptype">Forms and other input elements</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determines whether keyboard focus should automatically move to the next input field in a set of related fields (<abbr>e.g.</abbr> when inputting a phone number requires a series of fields).
+          For keyboard users, this can disrupt the normal behaviour model for interaction with forms.
+          (Background: Jim Allan: <a href="https://lists.w3.org/Archives/Public/w3c-wai-ig/2015AprJun/0165.html">Re: Auto-Tabbing - Is this ever allowed?</a>, <abbr>WAI</abbr> Interest Group, 28 May 2015.)
+        </td>
+      </tr>
+      <tr class="inputui gpii-eu">
+        <th headers="th-name" scope="row">autoFormFocusEnabled</th>
+        <td headers="th-apptype">Forms and other input elements</td>
+        <td headers="th-datatype">Boolean</td>
+        <td headers="th-valuerange">true&nbsp;/ false</td>
+        <td headers="th-default">false</td>
+        <td headers="th-description">Determines whether keyboard focus should automatically jump to a form field (typically the first form field on a page) when a page is loaded in a browser.
+          Since such behaviour skips page elements such as the site navigation and form filling instructions, it decreases the usability of a page for screen reader users and other keyboard users.
+          (Background: Jim Allan: <a href="https://lists.w3.org/Archives/Public/w3c-wai-ig/2015AprJun/0165.html">Re: Auto-Tabbing - Is this ever allowed?</a>, <abbr>WAI</abbr> Interest Group, 28 May 2015.)
+        </td>
+      </tr>
+
       <tr class="timeouts gpii-eu">
         <th headers="th-name" scope="row">sessionTimeout</th>
         <td headers="th-apptype">Timeouts</td>
@@ -589,7 +612,7 @@
         <td headers="th-description">Determines the volume for the screen reader's synthetic speech.</td>
       </tr>
 
-      <tr class="touchscreen cloud4all hidden">
+      <tr class="touchscreen cloud4all">
         <th headers="th-name" scope="row">hapticFeedback</th>
         <td headers="th-apptype">Touch screen (mobile device)</td>
         <td headers="th-datatype">String</td>
