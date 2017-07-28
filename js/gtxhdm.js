@@ -28,40 +28,6 @@ function addLoadEvent(func) {
 }
 
 
-// Modifications to the original script: addition of "use strict"; == replaced with ===.
-/**
- * Load an external JavaScript without blocking other downloads or page processes.
- * @param {String} url - The URL of the JavaScript file. This URL is either an absolute URL, or relative to the HTML file that should load the script.
- * @param {Function} callback - The function that should be called when the external JavaScript file has finished loading.
- * @author Nicholas C. Zakas
- * @see Nicholas C. Zakas's article <a href="http://www.nczonline.net/blog/2009/07/28/the-best-way-to-load-external-javascript/">The best way to load external JavaScript</a> (NCZOnline, 28 July 2009).
- * @see Nicholas C. Zakas's article <a href="http://www.nczonline.net/blog/2009/06/23/loading-javascript-without-blocking/">Loading JavaScript without blocking</a> (NCZOnline, 23 June 2009).
- * @see Jack Slingerland's article <a href="http://www.re-cycledair.com/load-javascript-dynamically-with-lazy-load">Load Javascript Dynamically With Lazy Load</a> (Re-Cycled Air, 11 September 2010).
- */
-function loadScript(url, callback) {
-    "use strict";
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-
-    if (script.readyState) {  //IE
-        script.onreadystatechange = function() {
-            if (script.readyState === "loaded" ||
-                    script.readyState === "complete") {
-                script.onreadystatechange = null;
-                callback();
-            }
-        };
-    } else {  //Others
-        script.onload = function() {
-            callback();
-        };
-    }
-
-    script.src = url;
-    document.getElementsByTagName("head")[0].appendChild(script);
-}
-
-
 // addListener from N.C. Zakas: Maintainable JavaScript, p. 58
 // Note: this function is almost identical to DOMhelp.addEvent by C. Heilmann;
 //       DOMhelp.addEvent also passes on useCapture (boolean) to addEventListener.
@@ -85,20 +51,6 @@ function addListener(target, type, handler) {
     }
 }
 
-
-/**
- * Check the type of a variable. This function is intended to improve on the built-in <code>typeof</code> function.
- * @param  variable - The variable to be checked.
- * @returns {String} The detected type.
- * @author James Padolsey
- * @see James Padolsey's article <a href="http://james.padolsey.com/javascript/checking-types-in-javascript/">Checking types in JavaScript</a>
- * (12 January 2009).
- * @static
- */
-function typeOfVar(variable) {
-    "use strict";
-    return !!variable && Object.prototype.toString.call(variable).match(/(\w+)\]/)[1];
-}
 
 
 /**
