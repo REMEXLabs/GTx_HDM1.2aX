@@ -10,6 +10,7 @@ body {
   font-family: 'Libre Baskerville', 'Trebuchet MS', Verdana, Helvetica, sans-serif;
   background-color: #FFFBFA; /*#FFFAFA = Snow; #FFF5EE = SeaShell; see https://en.wikipedia.org/wiki/Shades_of_white */
   margin-top: 0; padding-top: 0;
+  font-size: 1em; line-height: 1.4em;
 }
 header {
   padding-left: 10px;
