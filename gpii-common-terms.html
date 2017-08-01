@@ -46,6 +46,13 @@
     “Common” also implies that not all of these terms were defined specifically with the Web in mind. 
     For example, <code>cursorSize</code> can be set on some operating systems but not by means of <abbr>CSS</abbr> styles.
   </p>
+  <p>Not all common terms are relevant to every type of <abbr>GPII</abbr> implementation. 
+    For example, several operating systems have built-in screen magnifiers and screen readers, 
+    and support various cursor sizes. Web browsers and web applications typically don't.
+    As a consequence, common terms such as <code>magnifierEnabled</code>, <code>screenReaderTTSEnabled</code>
+    and <code>cursorSize</code> can often be mapped to operating system settings, 
+    but not to features in browsers or web applications.
+  </p>
   <p>All “common terms” reside in the namespace
     <strong><code class="gpii-eu-term">http://registry.gpii.eu/common</code></strong>; in order to save space, this namespace is not mentioned in the table below.
     The expanded name of a term includes the namespace, for example
@@ -94,7 +101,12 @@
         <td headers="th-datatype">Float</td>
         <td headers="th-valuerange">0.0 .. 1.0</td>
         <td headers="th-default">0.5</td>
-        <td headers="th-description">Cursor size.</td>
+        <td headers="th-description">Cursor size.
+          <!-- Size unit not defined in Cloud4all; presumable points, like for fontSize. -->
+          <!-- In CSS, the cursor property can take URLs for alternative cursors; see https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_User_Interface/Using_URL_values_for_the_cursor_property  -->
+          (Operating systems such Microsoft Windows and <abbr>GNU</abbr>/Linux deskstops such as GNOME
+          support various cursor sizes. Browsers or web content cannot override this.)
+        </td>
       </tr>
       <tr class="screenenhancement cloud4all">
         <th headers="th-name" scope="row">mouseTrailing</th>
