@@ -211,7 +211,7 @@ code.gpii-eu-term {
 }
 
 iframe[src^='https://www.youtu'], iframe[src^='https://player.vimeo.com'] {
-  border: none; /* to replace the frameborder attribute */
+  border: 1px solid transparent; /* to replace the frameborder attribute; 'none' did not have the intended effect */
 }
 
 

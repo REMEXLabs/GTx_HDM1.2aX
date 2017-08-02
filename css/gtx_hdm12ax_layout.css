@@ -174,7 +174,7 @@ button:focus, button:hover {
 }
 
 iframe[src^='https://www.youtu'], iframe[src^='https://player.vimeo.com'] {
-  border: none; /* to replace the frameborder attribute;  1px solid transparent */
+  border: 1px solid transparent; /* to replace the frameborder attribute; 'none' did not have the intended effect */
 }
 
 
