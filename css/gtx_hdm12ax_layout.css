@@ -173,6 +173,10 @@ button:focus, button:hover {
   border-radius: 4px;
 }
 
+iframe[src^='https://www.youtu'], iframe[src^='https://player.vimeo.com'] {
+  border: none; /* to replace the frameborder attribute;  1px solid transparent */
+}
+
 
 /* "Media Queries: How to target desktop, tablet and mobile?": https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile 
  & query https://duckduckgo.com/?q=tablet+screen+size+width+pixels&ia=web */

@@ -210,6 +210,11 @@ code.gpii-eu-term {
   color: #B20000;
 }
 
+iframe[src^='https://www.youtu'], iframe[src^='https://player.vimeo.com'] {
+  border: none; /* to replace the frameborder attribute */
+}
+
+
 /* "Media Queries: How to target desktop, tablet and mobile?": https://stackoverflow.com/questions/6370690/media-queries-how-to-target-desktop-tablet-and-mobile 
  & query https://duckduckgo.com/?q=tablet+screen+size+width+pixels&ia=web */
 @media (min-width:320px) {
