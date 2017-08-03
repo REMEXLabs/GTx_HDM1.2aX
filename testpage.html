@@ -14,6 +14,39 @@
   <meta name="robots" content="noindex, nofollow" />
   <meta name="googlebot" content="noindex, nofollow" />
   <meta name="author" content="Christophe Strobbe" />
+  <style type="text/css">
+    .fortextareahidden { display: block; }
+    textarea.fortextareahidden { margin-left: 11em; }
+    label.fortextareahidden { margin-left: 9.5em; }
+
+    label[for="Textarea2"] { 
+      width: 40%;
+      margin-bottom: -1.4em;
+      /*color: transparent;*/ background-color: transparent;
+    }
+
+    /* Inspired by Chris Coyier's "Float Labels with CSS": https://css-tricks.com/float-labels-css/ */
+    p#Textarea3Container {
+      height: 6em;
+    }
+    label[for="Textarea3"] { 
+      margin-top: -5em; color: gray; background-color: transparent;
+    }
+    textarea#Textarea3:focus + label {
+      color: white;
+      margin-top: -1.4em; 
+    }
+    textarea#Textarea3:focus {
+      border-bottom: 1.6em solid blue;
+      margin-bottom: -1.6em;
+      height: 4em;
+      resize: none;
+    }
+    textarea#Textarea3 {
+      height: 5.6em;
+      resize: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -131,6 +164,13 @@
           <p><label for="message" class="fortextarea">Textarea:&nbsp;</label>
             <textarea cols="70" rows="10" id="message" name="message"></textarea>
           </p>
+          <p><label for="Textarea2" class="fortextareahidden">Textarea2&nbsp;</label>
+            <textarea class="fortextareahidden" cols="70" rows="5" id="Textarea2" name="Textarea2"></textarea>
+          </p>
+          <p id="Textarea3Container">
+            <textarea class="fortextareahidden" cols="70" rows="5" id="Textarea3" name="Textarea3"></textarea>
+            <label for="Textarea3" class="fortextareahidden">Textarea3&nbsp;</label>
+          </p>
         </div>
         <div class="fieldset buttons">
           <p>
@@ -156,7 +196,7 @@
               <option value="Lars-US">Lars  (<abbr>USA</abbr>)</option>
               <option value="Monika-DE">Monika (Germany)</option>
               <option value="Susan-UK">Susan (<abbr>UK</abbr>)</option>
-              <option value="Tom-IE">Tome (Ireland)</option>
+              <option value="Tom-IE">Tom (Ireland)</option>
             </select>
           </p>
         </div>
@@ -188,15 +228,6 @@
       <p style="font-size: 1rem;">Paragraph at <code>1rem</code> (<code>rem</code> stands for &ldquo;root em&rdquo;, the font size of the document's root element).</p>
     </section>
 
-    <!-- 
-    <div>
-      <iframe width="853" height="480" src="https://www.youtube.com/embed/ipKNMMeKhmI" frameborder="0" allowfullscreen></iframe>
-      <p>Andre Meixner, Head of User Centered Test (Accessibility &amp; Usability) at T-Systems Multimedia Solutions <abbr>GmbH</abbr>,
-        explains why accessible software solutions are important in work places.
-        (Video licence: <abbr title="Creative Commons Attribution">CC-BY</abbr> 4.0; copyright: <span lang="de">Technische Universität Dresden</span>, 2016.)
-      </p>
-    </div>
-    -->
   </main>
 
   <footer>
