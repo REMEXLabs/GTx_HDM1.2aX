@@ -187,6 +187,7 @@ input:focus, select:focus, textarea:focus, button:focus, button:hover {
   background-color: #F5FFE0;
   color: inherit;
 }
+/* W3C CSS Validator flags :valid and :invalid as invalid; they are part of CSS Selectors Level 4: https://drafts.csswg.org/selectors-4/#validity-pseudos (draft)*/
 input:valid {
   color: #4b6400; /*contrast ratio #4b6400 on #F5FFE0: 6.49:1 */
 }
