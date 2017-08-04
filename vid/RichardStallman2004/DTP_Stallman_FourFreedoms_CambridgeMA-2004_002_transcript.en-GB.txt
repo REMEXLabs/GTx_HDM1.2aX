@@ -1,0 +1,99 @@
+
+Anyway, free software means software that respects the user's freedom.
+
+Now, to be more specific, there are four essential freedoms:
+
+Freedom 0 is the freedom to run the program any way you like.
+
+Freedom 1 is the freedom to study the source code
+and then change it to do what you like. 
+
+Freedom 2 is the freedom to distribute 
+copies to other people.
+
+And Freedom 3 is the freedom to publish a modified version 
+so others can get the benefit of your improvements.
+
+I like to call freedoms 1, 2 and 3 
+"the freedom to help yourself",
+"the freedom to help your neighbour"
+and "the freedom to help build your community".
+
+Freedom 1, the freedom to help yourself, is
+the freedom to study and change the program.
+
+The freedom to help your neighbour is 
+the freedom to distribute copies.
+
+And the freedom to help build your community is
+the freedom to contribute your improvements.
+
+Now, these freedoms are not really 
+something new.
+
+It may be new to people to encounter 
+these freedoms for software, 
+but lots of people are used to these freedoms
+for something rather similar to software, 
+namely recipes.
+
+A program and a recipe are similar 
+but each of them is a series of steps 
+to carry out to get the results you want.
+
+Now it's true there are differences as well:
+a recipe is carried out by a cook who's thinking,
+whereas a program is carried out by a machine.
+
+But for this comparison 
+it's the similarities that matter.
+
+Because cooks are accustomed to using 
+recipes freely whenever they want to.
+
+And cooks are also accustomed to 
+looking at the ingredients,
+for instance to see if there's anything 
+that Joe is allergic to, say,
+or anything that Joe 
+doesn't like the taste of,
+or that the cook doesn't like the taste of.
+
+And cooks are accustomed to 
+changing recipes for various reasons.
+
+Cooks also are accustomed to making copies 
+of recipes for their friends,
+getting recipes from their friends.
+
+It's a little bit less common 
+to write down your changed version of a recipe
+and make a copy for other people,
+but people do that too.
+
+So it's the same four freedoms
+that cooks are accustomed to for recipes. 
+
+So imagine if some day, 
+the government starts saying
+that if you copy or change or share a recipe,
+then you're a pirate and 
+they'll put you in prison for years.
+
+Imagine how angry people will be.
+
+Well, that's the same anger that started
+the free software movement.
+
+I said, "How dare you try to stop me
+from changing software?"
+"How dare you tell me that I can't 
+be a decent person by sharing software?"
+
+I said I refuse to live that way.
+I said I won't stand for that non-free software.
+
+So I was determined to get it out of my life,
+to reject it.
+And that required a lot of work.
+And that work is the free software movement.
