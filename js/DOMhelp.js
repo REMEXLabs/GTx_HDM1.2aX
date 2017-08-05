@@ -26,6 +26,7 @@ var DOMhelp = {
 	    "use strict";
 		if (!document.getElementById || !document.createTextNode) {return;}
 	},
+
 	// See Beginning JS, p. 119.
 	lastSibling: function(node) {
 	    "use strict";
@@ -37,6 +38,7 @@ var DOMhelp = {
 		//return (tempObj.nodeType === Node.ELEMENT_NODE) ? tempObj : false;
 		return (tempObj.nodeType === 1) ? tempObj : false;
 	},
+
 	// See Beginning JS, p. 119.
 	firstSibling: function(node) {
 	    "use strict";
@@ -48,6 +50,7 @@ var DOMhelp = {
 		//return (tempObj.nodeType === Node.ELEMENT_NODE) ? tempObj : false;
 		return (tempObj.nodeType === 1) ? tempObj : false;
 	},
+
 	// See Beginning JS, p. 119.
 	getText: function(node) {
 	    "use strict";
@@ -61,6 +64,7 @@ var DOMhelp = {
 		//return tempObj.nodeType === Node.TEXT_NODE ? tempObj.nodeValue : false;
 		return tempObj.nodeType === 3 ? tempObj.nodeValue : false;
 	},
+
 	// See Beginning JS, p. 120.
 	setText: function(node,txt) {
 	    "use strict";
@@ -74,6 +78,7 @@ var DOMhelp = {
 		//if (tempObj.nodeType === Node.TEXT_NODE) {tempObj.nodeValue=txt} else {return false;}
 		if (tempObj.nodeType === 3) {tempObj.nodeValue=txt} else {return false;}
 	},
+
 	// See Beginning JS, p. 120.
 	createLink: function(to,txt) {
 	    "use strict";
@@ -82,6 +87,7 @@ var DOMhelp = {
 		tempObj.setAttribute('href',to);
 		return tempObj;
 	},
+
 	// See Beginning JS, p. 120.
 	createTextElm: function(elm,txt) {
 	    "use strict";
@@ -89,6 +95,7 @@ var DOMhelp = {
 		tempObj.appendChild(document.createTextNode(txt));
 		return tempObj;
 	},
+
 	// See Beginning JS, p. 121.
 	closestSibling: function(node,direction) {
 	    "use strict";
@@ -110,6 +117,7 @@ var DOMhelp = {
 		//return tempObj.nodeType === Node.ELEMENT_NODE ? tempObj : false;
 		return tempObj.nodeType === 1 ? tempObj : false;
 	},
+
 	// See Beginning JS, p. 121.
 	initDebug: function() {
 	    "use strict";
@@ -118,12 +126,14 @@ var DOMhelp = {
 		DOMhelp.debug.setAttribute('id',DOMhelp.debugWindowId);
 		document.body.insertBefore(DOMhelp.debug,document.body.firstChild);
 	},
+
 	// See Beginning JS, p. 121.
 	setDebug: function(bug) {
 	    "use strict";
 		if (!DOMhelp.debug) {DOMhelp.initDebug();}
 		DOMhelp.debug.innerHTML += bug+'\n';
 	},
+
 	// See Beginning JS, p. 122.
 	stopDebug: function() {
 	    "use strict";
@@ -132,6 +142,7 @@ var DOMhelp = {
 			DOMhelp.debug = null;
 		}
 	},
+
 	getKey: function(e) {
 	    "use strict";
 		if (window.event) {
@@ -141,6 +152,7 @@ var DOMhelp = {
 	    }
 		return key;
 	},
+
 	// helper methods
 	// NOTE: Also check for nodeType to address Safari bug; see http://www.quirksmode.org/js/events_properties.html
 	// See Beginning JS, p. 167-168.
@@ -154,6 +166,7 @@ var DOMhelp = {
 		}
 		return target;
 	},
+
 	// See Beginning JS, p. 168.
 	stopBubble: function(e) {
 	    "use strict";
@@ -164,6 +177,7 @@ var DOMhelp = {
 			e.stopPropagation();
 		}
 	},
+
 	// See Beginning JS, p. 168.
 	stopDefault: function(e) {
 	    "use strict";
@@ -174,6 +188,7 @@ var DOMhelp = {
 			e.preventDefault();
 		}
 	},
+
 	// See Beginning JS, p. 169.
 	// See also The Art and Science of JavaScript, p. 63 & 71.
 	cancelClick: function(e) {
@@ -187,6 +202,7 @@ var DOMhelp = {
 			e.preventDefault();
 		}
 	},
+
 	// By Scott Andrew. See Beginning JS, p. 166. 
 	// See also The Art and Science of JavaScript p. 61 & 64 -> http://www.scottandrew.com/weblog/articles/cbs-events
 	addEvent: function(elm, evType, fn, useCapture) {
@@ -201,6 +217,7 @@ var DOMhelp = {
 			elm['on' + evType] = fn;
 		}
 	},
+
 	// See Beginning JS, p. 128.
 	cssjs: function(a,o,c1,c2) {
 	    "use strict";
@@ -226,6 +243,7 @@ var DOMhelp = {
 			break;
 		}
 	},
+
 	// See Beginning JS, p. 170
     safariClickFix: function() {
         "use strict";
