@@ -173,6 +173,7 @@ form p {
 }
 form p label {
   vertical-align: top;
+  text-align: right;
 }
 label.forinput, label.forselect, label.fortextarea {
   display: inline-block;/*without this, width has no effect*/
