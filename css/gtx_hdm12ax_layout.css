@@ -1,4 +1,8 @@
-/* Stylesheet for layout, fonts etcetera but no colours. */
+/* 
+This CSS file is made available under a Creative Commons Attribution 4.0 International License. 
+Copyright Hochschule der Medien (HdM) / Stuttgart Media University, 2017.
+*/
+/* Stylesheet for layout, fonts etcetera but no colours. For importing into stylesheets that focus on colours. */
 
 html, body, header, h1 { margin: 0; padding: 0; }
 body {
