@@ -10,8 +10,11 @@ The example website in this repository is “live” at
 
 The repository's content is available under the licence [Creative Commons Attribution (CC-BY) 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 except where noted otherwise (e.g. images in the public domain; check the markdown files).
-Any programming code in this repository is available under the [Apache License 2.0](LICENSE).
+Any programming code in this repository is available under the [Apache License 2.0](LICENSE),
+except for third party libraries, which may have a different licence:
 
+* [plyr](https://github.com/sampotts/plyr) by Sam Potts: MIT licence;
+* [rangetouch](https://github.com/sampotts/rangetouch) by Sam Potts: MIT licence.
 
 ## Acknowledgements
 
