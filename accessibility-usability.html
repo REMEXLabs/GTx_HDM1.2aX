@@ -11,6 +11,7 @@
   <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/brown-on-buff.css" title="Brown on buff (low contrast)" id="rel-css-brown-on-buff" />
   <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/systemcolours.css" title="System colours" id="rel-css-system-colours" />
   <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/nocolours.css" title="&lsquo;No colours&rsquo;" id="rel-css-no-colours" />
+  <link rel="stylesheet" type="text/css" href="./js/plyr-2.0.13/plyr.css" />
   <meta name="robots" content="noindex, nofollow" />
   <meta name="googlebot" content="noindex, nofollow" />
   <meta name="author" content="Christophe Strobbe" />
@@ -55,5 +56,12 @@
     </p>
     <p><a href="contact-form.html">Contact form</a> | <a href="publisherinfo.html">Publisher information / <span lang="de">Impressum</span></a> | <a href="https://github.com/REMEXLabs/GTx_HDM1.2aX">GitHub repository</a></p>
   </footer>
+<script src="js/plyr-2.0.13/plyr.js" type="text/javascript"></script>
+<!-- Rangetouch to fix <input type="range"> on touch devices (see https://rangetouch.com) -->
+<script src="js/rangetouch-1.0.5/rangetouch.js" type="text/javascript"></script>
+<script type="text/javascript">
+  plyr.setup();
+  console.log("plyr.supported: " + plyr.supported("video"));
+</script>
 </body>
 </html>
