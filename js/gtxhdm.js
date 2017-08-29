@@ -129,8 +129,8 @@ var gtxhdm = {
 
     /**
      * Display the JSON data.
-     * @param {Object} data - data for the HTTP request.
-     * @param {String} elementID - ID attibute value of an HTML element.
+     * @param {Object} data - JSON data (from an HTTP request).
+     * @param {String} elementID - ID attibute value of an HTML element in which the JSON data will be displayed.
      * @author Christophe Strobbe (HdM)
      */
     displayJsonData: function(data, elementID) {
