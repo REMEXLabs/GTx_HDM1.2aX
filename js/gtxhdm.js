@@ -211,7 +211,7 @@ var gtxhdm = {
         if (DEBUG) { console.info("samplejsonform submitted: " + npSetName + ". JSON URL: " + jsonurl); }
 
         gtxhdm.getJsonRequest(jsonurl, function(fullNpSet) {
-            prefs = fullNpSet["flat"]["contexts"]["gpii-default"]["preferences"];
+            prefs = fullNpSet["contexts"]["gpii-default"]["preferences"];
             if (DEBUG) { console.log("The prefs (stringified): " + JSON.stringify(prefs, null, " ")); }
             gtxhdm.displayJsonData(prefs, "npSetContainer");
         });
