@@ -140,6 +140,7 @@ var gtxhdm = {
 
         content = document.getElementById(elementID);
         if (content) {
+                content.innerHTML = ""; // remove "leftovers" from previous function execution
             for (prop in data) {
                 content.innerHTML += prop + ": " + data[prop] + '<br />';
             }
