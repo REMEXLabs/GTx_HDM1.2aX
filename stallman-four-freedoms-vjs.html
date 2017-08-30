@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-GB" xml:lang="en-GB" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <title>Test Video Using Video.js | GTx HDM1.2aX</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/gtx_hdm12ax.css" title="Default style" id="rel-css-default" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/black-on-white.css" title="Black on white (high contrast)" id="rel-css-black-on-white" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/white-on-black.css" title="White on black (high contrast)" id="rel-css-white-on-black" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/yellow-on-black.css" title="Yellow on black (high contrast)" id="rel-css-yellow-on-black" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/lime-on-black.css" title="Lime on black (high contrast)" id="rel-css-lime-on-black" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/brown-on-buff.css" title="Brown on buff (low contrast)" id="rel-css-brown-on-buff" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/systemcolours.css" title="System colours" id="rel-css-system-colours" />
+  <link rel="alternate stylesheet" type="text/css" media="screen" href="./css/nocolours.css" title="&lsquo;No colours&rsquo;" id="rel-css-no-colours" />
+  <link href="js/videojs-6.2.5/video-js.min.css" rel="stylesheet" />
+  <!-- Support IE8 -->
+  <script src="js/videojs-6.2.5/ie8/videojs-ie8.min.js"></script>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="googlebot" content="noindex, nofollow" />
+  <meta name="author" content="Christophe Strobbe" />
+</head>
+
+<body>
+  <header>
+    <h1><span class="h1txt">Test Video Using Video.js</span></h1>
+    <p class="skiplink"><a class="skiplink" href="#main">Skip to main content</a></p>
+  </header>
+
+  <nav>
+    <h2>Site Navigation</h2>
+    <ul>
+      <li><a href="index.html" rel="home">Home</a></li>
+      <li><a href="accessibility-usability.html">Accessibility and Usability</a></li>
+      <li><a href="what-is-web-accessibility.html" title="What Is Web Accessibility and Why Is It Important?">Web Accessibility</a></li>
+      <li><a href="browser-features.html">Browser Features</a></li>
+      <li><a href="gpii-common-terms.html"><abbr>GPII</abbr> Common Terms</a></li>
+      <li><a href="glossary.html" rel="glossary"><abbr>ICT</abbr> Accessibility Glossary</a></li>
+      <li><a href="links.html">Links</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <p>This page contains contains a video using a <code>video</code> element and controls provided by
+      the media player <a href="https://github.com/videojs/video.js">Video.js</a>.
+      The <code>video</code> element contains two <code>track</code> elements: one for an <abbr>MP4</abbr> version of the video
+      and one for an 
+      <a href="https://en.wikipedia.org/wiki/Vorbis">Ogg Vorbis</a>
+      version of the video. The video element also contains several <code>track</code> elements for various caption and subtitle formats:
+      <a href="https://en.wikipedia.org/wiki/WebVTT"><abbr title="Web Video Text Tracks">WebVTT</abbr></a>, 
+      <abbr>SBV</abbr> and 
+      <a href="https://en.wikipedia.org/wiki/SubRip"><abbr title="SubRip Text">SRT</abbr></a>.
+      For a version of this page that uses the browser's native controls for the <code>video</code> element,
+      see the page
+      <a href="stallman-four-freedoms-native.html">Test Video for Native Video Player Controls</a>.
+    </p>
+    <section>
+      <h2>Richard Stallman on Free Software</h2>
+      <video class="video-js" controls="controls" id="rms-4freedoms" width="360" height="240">
+        <source src="vid/RichardStallman2004/DTP_Stallman_FourFreedoms_CambridgeMA-2004_002_512kb.mp4" type="video/mp4" />
+        <source src="vid/RichardStallman2004/DTP_Stallman_FourFreedoms_CambridgeMA-2004_002.ogv" type="video/ogg" />
+        <track label="British English captions (VTT)" kind="captions" srclang="en-GB" src="vid/RichardStallman2004/DTP_Stallman_FourFreedoms_CambridgeMA-2004_002_captions_en-GB.vtt" default="default" />
+        <track label="British English captions (SBV)" kind="captions" srclang="en-GB" src="vid/RichardStallman2004/DTP_Stallman_FourFreedoms_CambridgeMA-2004_002_captions_en-GB.sbv" />
+        <track label="British English captions (SRT)" kind="captions" srclang="en-GB" src="vid/RichardStallman2004/DTP_Stallman_FourFreedoms_CambridgeMA-2004_002_captions_en-GB.srt" />
+        <track label="US English captions (VTT)" kind="captions" srclang="en-US" src="vid/RichardStallman2004/DTP_Stallman_FourFreedoms_CambridgeMA-2004_002_captions_en-US.vtt" />
+        <track label="US English captions (SBV)" kind="captions" srclang="en-US" src="vid/RichardStallman2004/DTP_Stallman_FourFreedoms_CambridgeMA-2004_002_captions_en-US.sbv" />
+        <track label="US English captions (SRT)" kind="captions" srclang="en-US" src="vid/RichardStallman2004/DTP_Stallman_FourFreedoms_CambridgeMA-2004_002_captions_en-US.srt" />
+      </video>
+
+      <p>Download the video in
+        <a href="vid/RichardStallman2004/DTP_Stallman_FourFreedoms_CambridgeMA-2004_002_512kb.mp4"><abbr>MP4</abbr> format</a>
+        or
+        <a href="vid/RichardStallman2004/DTP_Stallman_FourFreedoms_CambridgeMA-2004_002.ogv">Ogg Vorbis format</a>.
+      </p>
+      <p>Download the captions in 
+        <a href="vid/RichardStallman2004/DTP_Stallman_FourFreedoms_CambridgeMA-2004_002_captions_en-US.sbv"><abbr>SBV</abbr> format</a>,
+        <a href="vid/RichardStallman2004/DTP_Stallman_FourFreedoms_CambridgeMA-2004_002_captions_en-US.srt"><abbr>SRT</abbr> format</a>,
+        or
+        <a href="vid/RichardStallman2004/DTP_Stallman_FourFreedoms_CambridgeMA-2004_002_captions_en-US.vtt"><abbr>VTT</abbr> format</a>.
+      </p>
+    </section>
+    <script src="js/videojs-6.2.5/video.min.js"></script>
+    <script type="text/javascript">
+    videojs.log.level('off');
+    videojs('rms-4freedoms', {
+        controls: true,
+        autoplay: false,
+        preload: 'auto'
+    });
+    </script>
+  </main>
+
+  <footer>
+    <p id="licence">
+    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="./img/cc_by_4.0_88x31.png" /></a><br />
+    <strong>Example Site for GTx HDM1.2aX</strong> by <a href="https://github.com/REMEXLabs"><abbr>HdM</abbr> REMEXLabs</a> is licensed under a 
+    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    <br />Copyright © <span lang="de">Hochschule der Medien</span> (<abbr>HdM</abbr>) / Stuttgart Media University, 2017.
+    </p>
+    <p><a href="contact-form.html">Contact form</a> | <a href="publisherinfo.html">Publisher information / <span lang="de">Impressum</span></a> | <a href="https://github.com/REMEXLabs/GTx_HDM1.2aX">GitHub repository</a></p>
+  </footer>
+</body>
+</html>
