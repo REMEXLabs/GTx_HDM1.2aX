@@ -5,6 +5,9 @@ This repository contains code and resources for the online course [User Interfac
 The example website in this repository is “live” at 
 [https://remexlabs.github.io/GTx_HDM1.2aX/](https://remexlabs.github.io/GTx_HDM1.2aX/).
 
+To clone the repo, use
+
+`git clone https://github.com/REMEXLabs/GTx_HDM1.2aX.git`
 
 ## Licences
 
