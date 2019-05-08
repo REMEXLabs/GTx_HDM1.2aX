@@ -119,12 +119,13 @@
     <p>Under “<samp>Advanced</samp>”, you can specify the default serif font, the default sans-serif font, 
       and font faces and sizes for writing systems other than the Latin alphabet.
     </p>
-    <!-- According to validator.w3.org, aria-described-by attribute is currently not allowed on figure or img elements:
-    <figure aria-described-by="desc-advanced-font-settings">
+    <!-- 2017: According to validator.w3.org, aria-described-by attribute is currently not allowed on figure or img elements:
+        <figure aria-described-by="desc-advanced-font-settings">
+        May 2019: According to validator.w3.org, longdesc on the img element is obsolete, so it is now replaced with aria-describedby.
     -->
     <figure>
       <img src="./img/Firefox-v54_Options_Content_AdvancedFontSettings_cropped-6.png" alt="window detailed font settings; see description below" 
-      longdesc="#desc-advanced-font-settings" />
+      aria-describedby="desc-advanced-font-settings" />
       <figcaption>Advanced font settings in Firefox 54</figcaption>
     </figure>
     <p id="desc-advanced-font-settings">
