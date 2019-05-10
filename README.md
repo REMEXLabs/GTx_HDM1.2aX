@@ -7,7 +7,7 @@ The example website in this repository is “live” at
 
 To clone the repo, use
 
-`git clone https://github.com/REMEXLabs/GTx_HDM1.2aX.git`
+`git clone https://github.com/REMEXLabs/GTx_HDM1.2aX`
 
 ## Licences
 
